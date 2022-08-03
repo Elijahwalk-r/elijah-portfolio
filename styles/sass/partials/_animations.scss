@@ -1,0 +1,31 @@
+// HEADER PAGE ANIMATION
+@keyframes scrollArrow {
+    0% {
+            margin-bottom: 10px;
+        }
+    
+        20%,
+        40%,
+        60%,
+        80% {
+            margin-bottom: 20px;
+        }
+    
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            margin-bottom: 10px;
+        }
+    
+        100% {
+            margin-bottom: 20px;
+        }
+}
+.scrollDirection{
+    i{
+        animation: scrollArrow 10s ease-in-out infinite;
+    }
+}
+

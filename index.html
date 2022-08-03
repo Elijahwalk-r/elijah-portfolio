@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Font Awesome Links for Icons -->
+    <script src="https://kit.fontawesome.com/e7cdbb2aec.js" crossorigin="anonymous"></script>
+
+    
+
+    <title>Portfolio</title>
+</head>
+<body class="firstBackground">
+    <!-- Skip Link directing non sighted users to main content -->
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+
+    <!-- START NAV -->
+    <nav>
+        <div class="wrapper">
+
+            <!-- Hidden hamburger menu that will turn into a slideout once width of screen changes -->
+            <input type="checkbox" id="toggle" name="toggle" class="hideMe">
+            <label for="toggle" id="toggle" class="fa-solid fa-bars hideMe showMe"></label>
+            <ul class="navBar slideOut">
+                <li>
+                    <a href="#main" class="menu">Home</a>
+                </li>
+                <li>
+                    <a href="#aboutMe" class="menu">About Me</a>
+                </li>
+                <li>
+                    <a href="#mySkills" class="menu">Skills</a>
+                </li>
+                <li>
+                    <a href="#myProjects" class="menu">Projects</a>
+                </li>
+                <li>
+                    <a href="#contactMe" class="menu">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- END Wrapper -->
+    </nav>
+    <!-- END NAV -->
+
+    <!-- START MAIN -->
+    <main>
+        <!-- START HEADER -->
+        <header>
+            <div class="wrapper main" id="main">
+                <div class="mainHeading">
+                    <p class="beforeTitle">I'm a</p>
+                    <h1>Web Developer<span>.</span></h1>
+                    <p class="headerName">Elijah Walker</p>
+                    <p class="headerPortfolio">Portfolio</p>
+                </div>
+                <a href="#mainContent" class="scrollDirection">
+                     <i class="fa-solid fa-angles-down"></i>
+                </a>
+            </div>
+            <!-- END WRAPPER -->
+        </header>
+        <!-- END HEADER -->
+        
+        <!-- START ABOUT Section -->
+        <article class="secondBackground sectionHeight" id="mainContent">
+            <div class="wrapper">
+                <div class="contentSection" id="aboutMe">
+                    <div class="title">
+                        <h2><span class="subHeading">Abo</span>ut Me</h2>
+                    </div>
+            
+                    <div class="aboutFlexParent">
+                        <div class="imageParent">
+                            <img src="https://placebear.com/200/300" alt="A picture of Elijah Smiling" class="image1">
+                            <img src="https://placebear.com/200/300" alt="" class="image2">
+                            <img src="https://placebear.com/200/300" alt="" class="image3">
+                        </div>
+                        <div class="aboutParent">
+                            <div class="aboutFirstChild">
+                                <h3 class="aboutName">My name is <span>Elijah Walker</span></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda accusamus magnam,
+                                    facere impedit, perspiciatis est, aspernatur dolorem odit ea veritatis aut quos pariatur
+                                    excepturi. Eius magni ipsa illum praesentium atque quidem, labore optio repudiandae laboriosam
+                                    vel maxime iusto itaque quod, ducimus cum dolore voluptas tempora qui nihil iure enim velit
+                                    ratione. Nisi facere officia recusandae excepturi veniam. Ea, magnam velit doloremque incidunt
+                                    inventore ab impedit cum facilis asperiores vel?</p>
+                            </div>
+                            <h4>Hobbies</h4>
+                            <div class="hobbies">
+                                <p>Lorem, ipsum.</p>
+                                <p>Lorem, ipsum.</p>
+                                <p>Lorem, ipsum.</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+            
+                            <h4>Education</h4>
+                            <div class="education">
+                                <p>Lorem ipsum dolor sit.</p>
+                                <p>Lorem ipsum dolor sit.</p>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FLEX CONTAINER -->
+                </div>
+                <!-- END CONTENT SECTION DIV -->
+            </div>
+            <!-- END WRAPPER -->
+        </article>
+        <!-- END ABOUT SECTION -->
+
+        <!-- START SKILLS SECTION -->
+        <section class="firstBackground sectionHeight">
+            <div class="wrapper">
+                <div class="contentSection" id="mySkills">
+                    <div class="title">
+                        <h2><span class="subHeading">Ski</span>lls</h2>
+                    </div>
+                    <ul class="techSkillsContainer">
+                        <li class="techSkillsChild">
+                            <img src="./assets/html5.png" alt="A Picture of the HTML5 logo">
+                            <p>HTML</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/css3.png" alt="A picture of the CSS3 logo">
+                            <p>CSS</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/sass.png" alt="A picture of the SASS logo">
+                            <p>Sass</p>
+            
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/js-logo.png" alt="A picture of the JavaScript logo">
+                            <p>JavaScript</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/jquery.png" alt="A picture of the jQuery logo">
+                            <p>JQuery</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/react.png" alt="A picture of the REACT logo">
+                            <p>React</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/firebase.png" alt="A picture of the firebase logo">
+                            <p>Firebase</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/git-version control.png" alt="A picture of GitHubs version control logo">
+                            <p>Git</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/terminal.png" alt="A picture of a computer terminal's logo">
+                            <p>Terminal</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/api-logo.png" alt="A picture of a gear with with the words API inside">
+                            <p>Rest API</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/responsive-design-logo.png"
+                                alt="A picture of a monitor, tablet and cell phone representing responsive-design">
+                            <p>Responsive Design</p>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/web-accessibility.png"
+                                alt="A picture of an individual with arms and legs spread out representing web accessibility">
+                            <P>Accessibility</P>
+                        </li>
+                        <li class="techSkillsChild">
+                            <img src="./assets/pair-programming.png"
+                                alt="A picture of two individuals sitting in front of one computer working together on code representing paired-programming.">
+                            <p>Paired Programming</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END CONTENT SECTION DIV -->
+            </div>
+            <!-- END WRAPPER -->
+        </section>
+        <!-- END SKILLS SECTION -->
+
+        <!-- START PROJECTS SECTION -->
+        <section class="secondBackground sectionHeight">
+            <div class="wrapper">
+                <div class="contentSection" id="myProjects">                
+                    <div class="title">
+                        <h2><span class="subHeading">Pro</span>jects</h2>
+                    </div>
+            
+                    <ul class="projectParent">
+                        <li class="project1 projectItem">
+                            <img src="./assets/animeFactFinderApp.png" alt="">                
+                            <div class="overlay">
+                                <p>hey</p>
+                            </div>                        
+                        </li>
+
+                        <li class="project2 projectItem ">
+                            <img src="https://placebear.com/200/200" alt="">
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+
+                        </li>
+
+                        <li class="project3 projectItem">
+                            <img src="./assets/willow.png" alt="">
+                            <div class="overlay">
+                                <p>hi</p>
+                            </div>
+                        </li>
+
+                        <li class="project4 projectItem">
+                            <img src="https://placebear.com/200/200" alt="">
+                            <div class="overlay">
+                                <p>hey</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END CONTENT SECTION DIV -->
+            </div>
+            <!-- END WRAPPER -->
+        </section>
+        <!-- END PROJECTS SECTION -->
+            
+        <!-- START CONTACT SECTION -->
+        <section class="firstBackground sectionHeight">
+            <div class="wrapper">
+                <div class="contentSection" id="contactMe">
+                    <div class="title">
+                        <h2><span class="subHeading">Con</span>tact Me</h2>
+                    </div>
+                    <div class="contactParent">
+                        <p class="contactMe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea beatae, quaerat hic in
+                            perspiciatis sapiente. Eius atque, minus quidem tempora voluptates dicta quaerat, ratione ullam, saepe
+                            incidunt quas ducimus eaque.</p>
+            
+                        <fieldset>
+                            <form action="">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="John Smith">
+            
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="JohnSmith@gmail.com">
+            
+                                <label for="message">Message</label>
+                                <textarea name="" id="message" cols="30" rows="5" placeholder="Get in touch..."></textarea>
+            
+                                <button type="submit" class="contactSubmit">Submit</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- END CONTENT SECTION DIV -->
+            </div>
+            <!-- END WRAPPER -->
+        </section>
+        <!-- END CONTACT SECTION -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START ICON ASIDE -->
+    <aside>
+        <ul class="social">
+            <li>
+                <a href="https://www.linkedin.com/in/elijah-j-walker/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Elijahwalk-r" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/3lijahWalker" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@elijahwalk.r" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-medium"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- END ICON ASIDE -->
+
+    <footer>
+        <div class="wrapper">
+            <p>Made with love by Elijah Walker</p>
+            <p>Inspiration from <a href="">John Smith</a></p>
+        </div>
+    </footer>
+    <!-- Linking external Javascript -->
+    <script src="indexScripts.js"></script>
+</body>
+</html>

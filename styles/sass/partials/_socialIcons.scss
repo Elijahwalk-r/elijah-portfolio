@@ -1,0 +1,31 @@
+.social{
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    i{
+        margin-top:15px;
+    }
+
+    li{
+        position: relative;
+    }
+
+    a:hover::before,
+    a:focus::before {
+        content: url("../assets/pointer.png");
+        position: absolute;
+        transform: rotate(90deg);
+        top: 15px;
+        right: 50px;
+    }
+
+    i{
+        transition: all 0.4s;
+    }
+    i:active,
+    :hover{
+       color:$tertiary
+    }
+}
+
+      

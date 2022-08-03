@@ -1,0 +1,59 @@
+.skip-link {
+    position: absolute;
+    left: -2000px;
+    top: 10px;
+    background-color: black;
+    color: white;
+    z-index: 10;
+
+    &:focus {
+        left: 0;
+    }
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+body,
+a{
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.firstBackground {
+    background-color: $primary;
+}
+
+.secondBackground {
+    background-color: $quaternary;
+}
+
+.sectionHeight{
+    height: 100vh;
+}
+
+.contentSection {
+    padding: 15px 0 15px 0;
+}
+
+span {
+   color: $tertiary
+}
+
+// Titles
+
+.title {
+    margin: 20px 0px 50px 0;
+}
+
+.subHeading{
+    border-bottom: 4px solid red;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,61 @@
+.firstBackground{
+    background-color: $primary;
+}
+
+.main{
+    height: 100vh;
+    display: flex; 
+    a{
+        align-self: flex-end;
+    }
+}
+
+.scrollDirection i {
+    font-size: 3rem;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    color: $tertiary;
+}
+
+
+.mainHeading{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beforeTitle{
+    margin-bottom: 0px;
+    font-size: 2.3rem;
+}
+
+
+.headerName{
+    align-self: flex-start;
+    width: fit-content;
+    border: 1px solid rgb(76, 32, 32);
+    border-radius: 5px 5px;
+    background-color: $tertiary;
+    padding: 5px 10px;
+}
+
+.headerPortfolio{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 14rem;
+    text-transform: uppercase;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    z-index: -10;
+    color: #4f4f4f;
+    opacity: 0.2;
+}
+
+// h2{
+ //    -webkit-text-stroke-color: red;
+ //    -webkit-text-stroke-width: 2px;
+ //     color: transparent;
+ // }
+ 

@@ -1,0 +1,770 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: rgb(235, 0, 0);
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p {
+  line-height: 32px;
+  letter-spacing: 1.3px;
+}
+
+ul,
+li,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.social i {
+  font-size: 1.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -2000px;
+  top: 10px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+body,
+a {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.firstBackground {
+  background-color: #202020;
+}
+
+.secondBackground {
+  background-color: #1a1a1a;
+}
+
+.sectionHeight {
+  height: 100vh;
+}
+
+.contentSection {
+  padding: 15px 0 15px 0;
+}
+
+span {
+  color: rgb(235, 0, 0);
+}
+
+.title {
+  margin: 20px 0px 50px 0;
+}
+
+.subHeading {
+  border-bottom: 4px solid red;
+  padding-bottom: 10px;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+input[type=checkbox]:focus + label {
+  border: 1px dotted #202020;
+  color: blue;
+}
+
+nav input {
+  position: absolute;
+  left: 0;
+}
+nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav input[type=checkbox]:checked ~ .slideOut {
+  left: 0;
+  z-index: 30;
+}
+nav label[for=toggle] {
+  position: fixed;
+  color: rgb(235, 0, 0);
+  top: 10px;
+  left: 15px;
+  z-index: 40;
+  font-size: 3rem;
+}
+nav .slideOut {
+  position: fixed;
+  width: 100vw;
+  left: -130%;
+  background-color: #202020;
+  opacity: 0.95;
+  height: 100vh;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 10;
+}
+nav .slideOut li {
+  width: 100%;
+  margin: 20px;
+}
+nav .slideOut a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.social {
+  position: fixed;
+  top: 20px;
+  right: 15px;
+}
+.social i {
+  margin-top: 15px;
+}
+.social li {
+  position: relative;
+}
+.social a:hover::before,
+.social a:focus::before {
+  content: url("../assets/pointer.png");
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 15px;
+  right: 50px;
+}
+.social i {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.social i:active,
+.social :hover {
+  color: rgb(235, 0, 0);
+}
+
+.firstBackground {
+  background-color: #202020;
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.scrollDirection i {
+  font-size: 3rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 15px;
+  color: rgb(235, 0, 0);
+}
+
+.mainHeading {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beforeTitle {
+  margin-bottom: 0px;
+  font-size: 2.3rem;
+}
+
+.headerName {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgb(76, 32, 32);
+  border-radius: 5px 5px;
+  background-color: rgb(235, 0, 0);
+  padding: 5px 10px;
+}
+
+.headerPortfolio {
+  font-family: "Londrina Outline", cursive;
+  font-size: 14rem;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  z-index: -10;
+  color: #4f4f4f;
+  opacity: 0.2;
+}
+
+h2,
+h4 {
+  text-align: center;
+}
+
+.aboutName {
+  color: white;
+}
+
+.aboutFlexParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.imageParent {
+  width: 35%;
+  height: 65%;
+  position: relative;
+}
+.imageParent img {
+  border: 10px solid white;
+  border-bottom: 50px solid white;
+  border-radius: 2px;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  position: absolute;
+}
+.imageParent img:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.imageParent .image1 {
+  left: 90px;
+  top: 40px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+.imageParent .image2 {
+  left: 50px;
+}
+.imageParent .image3 {
+  right: 150px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.aboutParent {
+  width: 55%;
+  height: 100%;
+}
+.aboutParent h4 {
+  margin-bottom: 20px;
+}
+
+.aboutFirstChild {
+  margin-bottom: 20px;
+}
+
+.hobbies {
+  margin-top: 10px;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.hobbies p {
+  text-align: center;
+  width: 50%;
+  font-size: 0.8rem;
+}
+
+.education {
+  text-align: center;
+}
+.education p {
+  font-size: 0.8rem;
+}
+
+.techSkillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 50vh;
+}
+
+.techSkillsChild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  width: 25%;
+  height: 30%;
+}
+.techSkillsChild img {
+  height: 50%;
+}
+.techSkillsChild p {
+  margin-top: 10px;
+}
+
+.projectParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid red;
+}
+.projectParent li {
+  color: white;
+  margin: 50px;
+  width: calc(50% - 100px);
+}
+
+.project1 {
+  border: 1px solid green;
+}
+
+.project2 {
+  border: 1px solid blue;
+}
+
+.project3 {
+  border: 1px solid orange;
+}
+
+.project4 {
+  border: 1px solid purple;
+}
+
+.projectItem {
+  position: relative;
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 0.6;
+}
+
+.contactMe {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  -webkit-box-shadow: -12px 12px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: -12px 12px 8px 0 rgba(0, 0, 0, 0.5);
+  border: none;
+}
+fieldset form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+fieldset input,
+fieldset textarea {
+  margin-bottom: 20px;
+  resize: none;
+  padding: 10px;
+}
+fieldset label {
+  margin-bottom: 5px;
+}
+
+.contactSubmit {
+  width: 30%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: rgb(235, 0, 0);
+  border: none;
+  border-radius: 5px 5px;
+  -webkit-box-shadow: 0 0 20px rgb(82, 82, 82);
+          box-shadow: 0 0 20px rgb(82, 82, 82);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contactSubmit:active,
+:focus {
+  border: 1px solid #1a1a1a;
+  -webkit-box-shadow: 0 0 5px rgb(71, 71, 71);
+          box-shadow: 0 0 5px rgb(71, 71, 71);
+}
+
+@-webkit-keyframes scrollArrow {
+  0% {
+    margin-bottom: 10px;
+  }
+  20%, 40%, 60%, 80% {
+    margin-bottom: 20px;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    margin-bottom: 10px;
+  }
+  100% {
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes scrollArrow {
+  0% {
+    margin-bottom: 10px;
+  }
+  20%, 40%, 60%, 80% {
+    margin-bottom: 20px;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    margin-bottom: 10px;
+  }
+  100% {
+    margin-bottom: 20px;
+  }
+}
+.scrollDirection i {
+  -webkit-animation: scrollArrow 10s ease-in-out infinite;
+          animation: scrollArrow 10s ease-in-out infinite;
+}

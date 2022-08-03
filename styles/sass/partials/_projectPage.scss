@@ -1,0 +1,53 @@
+.projectParent{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    li{
+        color: white;
+        margin: 50px;
+        width: calc((100% / 2) - 100px);
+    }
+}
+
+.project1{
+    border: 1px solid green;
+  
+}
+
+.project2 {
+    border: 1px solid blue;
+
+}
+
+.project3 {
+    border: 1px solid orange;
+}
+
+.project4 {
+    border: 1px solid purple;
+    
+}
+
+.projectItem{
+    position: relative;
+}
+
+
+.overlay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 0.6;
+}
+
