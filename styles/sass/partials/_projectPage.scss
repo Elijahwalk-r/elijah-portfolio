@@ -1,32 +1,16 @@
 .projectParent{
     display: flex;
-    margin: 0 auto;
     flex-wrap: wrap;
-    border: 1px solid red;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: -10px 10px 15px black;
+    margin-bottom: 50px;
     li{
         color: white;
-        margin: 50px;
+        margin: 50px 10px;
         width: calc((100% / 2) - 100px);
+        height: 100%;
     }
-}
-
-.project1{
-    border: 1px solid green;
-  
-}
-
-.project2 {
-    border: 1px solid blue;
-
-}
-
-.project3 {
-    border: 1px solid orange;
-}
-
-.project4 {
-    border: 1px solid purple;
-    
 }
 
 .projectItem{
@@ -45,6 +29,29 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+}
+
+.projectLinks{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 20px;
+    a{
+        border-radius: 5%;
+        box-shadow: -1px 1px 5px $tertiary;
+        background-color: $tertiary;
+        padding: 5px 15px;  
+    }
+}
+
+.projectIcons{
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    i{
+        margin: 0px 10px 0px 10px;
+    }
 }
 
 .overlay:hover{

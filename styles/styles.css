@@ -518,14 +518,21 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  margin-bottom: 50px;
 }
 
 .imageParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 35%;
-  height: 65%;
   position: relative;
 }
 .imageParent img {
+  width: 75%;
   border: 10px solid white;
   border-bottom: 50px solid white;
   border-radius: 2px;
@@ -540,12 +547,12 @@ h4 {
 }
 .imageParent .image1 {
   left: 90px;
-  top: 40px;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
 }
 .imageParent .image2 {
   left: 50px;
+  top: 100px;
 }
 .imageParent .image3 {
   right: 150px;
@@ -556,6 +563,9 @@ h4 {
 .aboutParent {
   width: 55%;
   height: 100%;
+  padding: 20px;
+  -webkit-box-shadow: -10px 10px 15px black;
+          box-shadow: -10px 10px 15px black;
 }
 .aboutParent h4 {
   margin-bottom: 20px;
@@ -594,9 +604,18 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 50vh;
+  height: 70vh;
+  padding: 20px;
+  -webkit-box-shadow: -10px 10px 15px black;
+          box-shadow: -10px 10px 15px black;
 }
 
 .techSkillsChild {
@@ -613,46 +632,37 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
-  width: 25%;
+  margin-bottom: 30px;
+  width: 20%;
   height: 30%;
 }
 .techSkillsChild img {
-  height: 50%;
+  height: 45%;
 }
 .techSkillsChild p {
   margin-top: 10px;
+  font-size: 0.9rem;
 }
 
 .projectParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-shadow: -10px 10px 15px black;
+          box-shadow: -10px 10px 15px black;
+  margin-bottom: 50px;
 }
 .projectParent li {
   color: white;
-  margin: 50px;
+  margin: 50px 10px;
   width: calc(50% - 100px);
-}
-
-.project1 {
-  border: 1px solid green;
-}
-
-.project2 {
-  border: 1px solid blue;
-}
-
-.project3 {
-  border: 1px solid orange;
-}
-
-.project4 {
-  border: 1px solid purple;
+  height: 100%;
 }
 
 .projectItem {
@@ -676,6 +686,40 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
+}
+
+.projectLinks {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 20px;
+}
+.projectLinks a {
+  border-radius: 5%;
+  -webkit-box-shadow: -1px 1px 5px rgb(235, 0, 0);
+          box-shadow: -1px 1px 5px rgb(235, 0, 0);
+  background-color: rgb(235, 0, 0);
+  padding: 5px 15px;
+}
+
+.projectIcons {
+  margin: 20px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projectIcons i {
+  margin: 0px 10px 0px 10px;
 }
 
 .overlay:hover {
@@ -733,6 +777,10 @@ fieldset label {
   border: 1px solid #1a1a1a;
   -webkit-box-shadow: 0 0 5px rgb(71, 71, 71);
           box-shadow: 0 0 5px rgb(71, 71, 71);
+}
+
+footer {
+  text-align: center;
 }
 
 @-webkit-keyframes scrollArrow {

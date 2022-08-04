@@ -11,14 +11,17 @@ h4{
     display: flex;
     justify-content: space-between;
     height: 100%;
+    margin-bottom: 50px;
 }
 
 .imageParent{
+    display: flex;
+    align-items: center;
     width: 35%;
-    height:65%;
     position: relative;
 
     img{
+        width: 75%;
         border: 10px solid white;
         border-bottom: 50px solid white;
         border-radius: 2px;
@@ -32,12 +35,12 @@ h4{
 
     .image1{
         left: 90px;
-        top: 40px;
         transform: rotate(40deg);
     }
 
     .image2{
         left: 50px;
+        top: 100px;
     }
 
     .image3{
@@ -49,6 +52,8 @@ h4{
 .aboutParent{
     width: 55%;
     height: 100%;
+    padding: 20px;
+    box-shadow: -10px 10px 15px black;
     h4{
         margin-bottom: 20px;
     }
