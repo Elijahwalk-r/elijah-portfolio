@@ -1,8 +1,8 @@
 input[type=checkbox] {
     opacity: 0;
     &:focus+label {
-        border: 1px dotted $primary;
-        color: blue;
+        color: $tertiary;
+        opacity: 0.7;
     }
 }
 
@@ -34,10 +34,11 @@ nav {
 
     .slideOut {
         position: fixed;
-        width: 100vw;
+        width: 90vw;
         left: -130%;
         background-color: $primary;
         opacity: 0.95;
+        border-right: 3px ridge $tertiary;
         height: 100vh;
         transition: 0.6s;
         z-index: 10;
@@ -45,7 +46,7 @@ nav {
 
     .slideOut li {
         width: 100%;
-        margin: 20px;
+        margin: 20px 0;
     }
 
     .slideOut a {

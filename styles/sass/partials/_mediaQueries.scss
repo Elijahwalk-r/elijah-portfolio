@@ -1,0 +1,184 @@
+@media (max-width: 1200px) {
+    //START ICON ASIDE MEDIA QUERIES
+    .social {
+        li{
+            a:hover::before,
+            a:focus::before {
+                content: url('');
+            }
+        }
+    }
+    //END ICON ASIDE MEDIA QUERIES
+
+    //START ABOUT SECTION MEDIA QUERIES 
+    .aboutFlexParent{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .aboutParent {
+            width: 100%;
+        }        
+        .imageParent{
+            margin: 50px 0;
+            width:80%;
+            position: static;
+            img{
+                position: static;
+            }
+            .image1,
+            .image2,
+            .image3{
+                border-bottom: 20px solid white;
+            }
+       }
+    }  
+    // END ABOUT SECTION MEDIA QUERIES
+
+    // START SKILLS SECTION MEDIA QUERIES 
+    .techSkillsContainer{
+        .techSkillsChild{
+            width: calc(100% / 4);
+        }
+    }
+    // END SKILLS SECTION MEDIA QUERIES
+
+    // START PROJECT SECTION MEDIA QUERIES
+    .projectParent{
+        flex-direction: column;
+        align-items: center;
+        .projectItem{
+            margin: 10px 0;
+            width: 80%;
+        }
+        .projectPic{
+            width: 50%;
+        }
+        li:nth-child(1){
+            order: -8;
+        }
+        li:nth-child(2){
+            order: -7;
+            border-bottom: 4px solid red;
+            box-shadow: -1px 1px 15px black;
+            padding: 20px 10px;
+        }
+        li:nth-child(3){
+            order: -5;
+        }
+        li:nth-child(4){
+            order: -6;
+        }
+        li:nth-child(5){
+            order: -4;
+        }
+        li:nth-child(6) {
+            order: -3;
+        }
+        li:nth-child(7) {
+            order: -1;
+        }                                                    li:nth-child(8) {
+            order: -2;                                      
+        }
+        .overlay{
+            font-size: 0.9rem;
+        }
+    }
+    // END PROJECT SECTION MEDIA QUERIES 
+}
+// END 1200px MEDIA QUERY
+
+
+// START 715px MEDIA QUERY
+@media (max-width: 715px){
+    //START NAV MEDIA QUERIES
+    .navigation{
+        .slideOut {
+            width: 85vw;
+            }
+    }
+    //END NAV MEDIA QUERIES
+
+    //START SKILLS SECTION MEDIA QUERIES
+    .techSkillsContainer {
+        .techSkillsChild {
+            width: calc(100% / 3);
+        }
+    }
+    // END SKILLS SECTION MEDIA QUERIES
+}
+// END 715px MEDIA QUERY
+
+
+// START 500px MEDIA QUERY
+@media(max-width:500px){
+    //START NAV MEDIA QUERIES
+        .navigation {
+            .slideOut {
+                width: 84vw;
+            }
+        }
+    //END NAV MEDIA QUERIES
+
+    //START ABOUT SECTION MEDIA QUERIES
+    .aboutFlexParent{
+        .imageParent{
+            img:hover{
+                transform: scale(2);
+            }
+        }
+    }
+    // END ABOUT SECTION MEDIA QUERIES
+
+    //START SKILLS SECTION MEDIA QUERIES 
+    .techSkillsContainer {
+        .techSkillsChild {
+            width: calc(100% / 2);
+        }
+    }
+    // END SKILLS SECTION MEDIA QUERIES
+
+    //START PROJECT SECTION MEDIA QUERIES 
+    .projectParent{
+        .projectPic {
+            width: 80%;
+        }
+        .projectLinks{
+            a{
+                padding: 5px 1px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    // END PROJECT SECTION MEDIA QUERIES
+
+    // START FOOTER MEDIA QUERIES
+    footer{
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    // END FOOTER MEDIA QUERIES
+}
+// END 500px MEDIA QUERY
+
+
+// START 340px MEDIA QUERY
+@media(max-width:340px){
+    //START NAV MEDIA QUERIES
+        .navigation {
+            .slideOut {
+                width: 80vw;
+            }
+        }
+    //END NAV MEDIA QUERIES
+
+    // SKILLS SECTION MEDIA QUERIES START
+        .techSkillsContainer {
+            .techSkillsChild {
+                i {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    // END SKILLS SECTION MEDIA QUERIES
+}

@@ -11,7 +11,30 @@
         width: calc((100% / 2) - 100px);
         height: 100%;
     }
+    img{
+        height: 100%;
+    }
+
+    li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(6),
+    li:nth-child(7) {
+        border-bottom: 4px solid red;
+        box-shadow: -1px 1px 15px black;
+        padding: 20px 10px;
+    }
+    
+    li:nth-child(1),
+    li:nth-child(4),
+    li:nth-child(5),
+    li:nth-child(8) {
+        box-shadow: -1px 0px 5px red;
+    }
 }
+
+ .itemGrow {
+     flex: 1 1 auto;
+ }
 
 .projectItem{
     position: relative;
@@ -29,6 +52,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    text-align: center;
 }
 
 .projectLinks{

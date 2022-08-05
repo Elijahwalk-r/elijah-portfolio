@@ -30,7 +30,7 @@
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
 
     <!-- START NAV -->
-    <nav>
+    <nav class="navigation">
         <div class="wrapper">
 
             <!-- Hidden hamburger menu that will turn into a slideout once width of screen changes -->
@@ -70,7 +70,7 @@
                     <p class="headerPortfolio">Portfolio</p>
                 </div>
                 <a href="#mainContent" class="scrollDirection">
-                     <i class="fa-solid fa-angles-down"></i>
+                    <i class="fa-solid fa-angles-down"></i>
                 </a>
             </div>
             <!-- END WRAPPER -->
@@ -101,19 +101,23 @@
                                     ratione. Nisi facere officia recusandae excepturi veniam. Ea, magnam velit doloremque incidunt
                                     inventore ab impedit cum facilis asperiores vel?</p>
                             </div>
-                            <h4>Hobbies</h4>
                             <div class="hobbies">
-                                <p>Lorem, ipsum.</p>
-                                <p>Lorem, ipsum.</p>
-                                <p>Lorem, ipsum.</p>
-                                <p>Lorem, ipsum.</p>
+                                <h4>Hobbies</h4>
+                                <div class="hobbiesChild">
+                                    <p>Lorem, ipsum.</p>
+                                    <p>Lorem, ipsum.</p>
+                                    <p>Lorem, ipsum.</p>
+                                    <p>Lorem, ipsum.</p>
+                                </div>
                             </div>
             
-                            <h4>Education</h4>
                             <div class="education">
-                                <p>Lorem ipsum dolor sit.</p>
-                                <p>Lorem ipsum dolor sit.</p>
-                                <p>Lorem ipsum dolor sit.</p>
+                                <h4>Education</h4>
+                                <div class="educationChild">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +130,7 @@
         <!-- END ABOUT SECTION -->
 
         <!-- START SKILLS SECTION -->
-        <section class="firstBackground sectionHeight">
+        <section class="firstBackground">
             <div class="wrapper">
                 <div class="contentSection" id="mySkills">
                     <div class="title">
@@ -134,59 +138,56 @@
                     </div>
                     <ul class="techSkillsContainer">
                         <li class="techSkillsChild">
-                            <img src="./assets/html5.png" alt="A Picture of the HTML5 logo">
+                            <i class="devicon-html5-plain colored"></i>
                             <p>HTML</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/css3.png" alt="A picture of the CSS3 logo">
+                            <i class="devicon-css3-plain colored"></i>
                             <p>CSS</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/sass.png" alt="A picture of the SASS logo">
+                            <i class="devicon-sass-original colored"></i>
                             <p>Sass</p>
             
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/js-logo.png" alt="A picture of the JavaScript logo">
+                            <i class="devicon-javascript-plain colored"></i>
                             <p>JavaScript</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/jquery.png" alt="A picture of the jQuery logo">
+                            <i class="devicon-jquery-plain colored"></i>
                             <p>JQuery</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/react.png" alt="A picture of the REACT logo">
+                            <i class="devicon-react-original colored"></i>
                             <p>React</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/firebase.png" alt="A picture of the firebase logo">
+                            <i class="devicon-firebase-plain colored"></i>
                             <p>Firebase</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/git-version control.png" alt="A picture of GitHubs version control logo">
+                            <i class="devicon-git-plain colored"></i>
                             <p>Git</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/terminal.png" alt="A picture of a computer terminal's logo">
+                            <i class="fa-solid fa-terminal terminal"></i>
                             <p>Terminal</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/api-logo.png" alt="A picture of a gear with with the words API inside">
+                            <i class="fa-solid fa-gear gear"></i>
                             <p>Rest API</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/responsive-design-logo.png"
-                                alt="A picture of a monitor, tablet and cell phone representing responsive-design">
+                            <i class="fa-solid fa-mobile-screen-button mobile"></i>
                             <p>Responsive Design</p>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/web-accessibility.png"
-                                alt="A picture of an individual with arms and legs spread out representing web accessibility">
+                            <i class="fa-solid fa-universal-access access"></i>
                             <P>Accessibility</P>
                         </li>
                         <li class="techSkillsChild">
-                            <img src="./assets/pair-programming.png"
-                                alt="A picture of two individuals sitting in front of one computer working together on code representing paired-programming.">
+                            <i class="fa-solid fa-people-arrows pair"></i>
                             <p>Paired Programming</p>
                         </li>
                     </ul>
@@ -206,9 +207,9 @@
                     </div>
             
                     <ul class="projectParent">
-                        <li class="projectItem">
+                        <li class="projectItem projectPic">
                             <div>
-                                <img src="./assets/animeFactFinderApp.png" alt="A screenshot picture from the anime fact finder starter webpage">                
+                                <img src="./assets/anime-fact-finder.png" alt="A screenshot picture from the anime fact finder starter webpage">                
                                 <div class="overlay">
                                     <p>Anime Fact Finder App</p>
                                 </div>                        
@@ -222,7 +223,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem ">
+                        <li class="projectItem itemGrow ">
                             <p>explaining project
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, vitae quos autem deleniti minima perferendis fugiat, quis eaque ipsam quasi incidunt consequatur aut quisquam porro nulla officiis dolore fuga voluptatem.
                             </p>
@@ -233,7 +234,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem">
+                        <li class="projectItem itemGrow">
                             <p>explaining project Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque itaque mollitia eligendi deserunt voluptates, hic consequatur, ipsam modi quam est fugiat soluta repudiandae atque recusandae illum voluptas molestias officia?</p>
 
                             <div class="projectLinks">
@@ -242,7 +243,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem">
+                        <li class="projectItem projectPic">
                             <div>
                                 <img src="./assets/willow.png" alt="A screenshot picture from the creative willow design home webpage">
                                 <div class="overlay">
@@ -258,7 +259,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem">
+                        <li class="projectItem projectPic">
                             <div>
                                 <img src="./assets/disneyapi.png" alt="A screenshot picture from the disney side character api home webpage">
                                 <div class="overlay">
@@ -275,7 +276,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem">
+                        <li class="projectItem itemGrow">
                             <p>explaining project Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quos accusantium, temporibus omnis ducimus natus. Veritatis tenetur repudiandae neque eum, eveniet animi aspernatur doloribus harum maxime quidem labore placeat ipsam.</p>
 
                             <div class="projectLinks">
@@ -284,7 +285,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem">
+                        <li class="projectItem itemGrow">
                             <p>explaining project Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptates ab asperiores a explicabo praesentium iure voluptatum aspernatur enim quos! Quo molestias perferendis doloribus eligendi iste sed illo doloremque sapiente.
                             </p>
 
@@ -294,7 +295,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem">
+                        <li class="projectItem projectPic">
                             <div>
                                 <img src="./assets/thunderforce.png" alt="A screenshot picture from the thunder force stadium design home webpage">
                                 <div class="overlay">
@@ -334,7 +335,7 @@
                                 <input type="text" id="name" placeholder="John Smith">
             
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" placeholder="JohnSmith@gmail.com">
+                                <input type="email" id="email" placeholder="JSmith@gmail.com">
             
                                 <label for="message">Message</label>
                                 <textarea name="" id="message" cols="30" rows="5" placeholder="Get in touch..."></textarea>
@@ -379,7 +380,7 @@
     </aside>
     <!-- END ICON ASIDE -->
 
-    <footer>
+    <footer class="secondBackground">
         <div class="wrapper">
             <p>Made with love by Elijah Walker</p>
             <p>Inspiration from <a href="">John Smith</a></p>

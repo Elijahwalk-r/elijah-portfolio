@@ -346,12 +346,150 @@ span {
   padding-bottom: 10px;
 }
 
+@media (max-width: 1200px) {
+  .social li a:hover::before,
+.social li a:focus::before {
+    content: url("");
+  }
+  .aboutFlexParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutFlexParent .aboutParent {
+    width: 100%;
+  }
+  .aboutFlexParent .imageParent {
+    margin: 50px 0;
+    width: 80%;
+    position: static;
+  }
+  .aboutFlexParent .imageParent img {
+    position: static;
+  }
+  .aboutFlexParent .imageParent .image1,
+.aboutFlexParent .imageParent .image2,
+.aboutFlexParent .imageParent .image3 {
+    border-bottom: 20px solid white;
+  }
+  .techSkillsContainer .techSkillsChild {
+    width: 25%;
+  }
+  .projectParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectParent .projectItem {
+    margin: 10px 0;
+    width: 80%;
+  }
+  .projectParent .projectPic {
+    width: 50%;
+  }
+  .projectParent li:nth-child(1) {
+    -webkit-box-ordinal-group: -7;
+        -ms-flex-order: -8;
+            order: -8;
+  }
+  .projectParent li:nth-child(2) {
+    -webkit-box-ordinal-group: -6;
+        -ms-flex-order: -7;
+            order: -7;
+    border-bottom: 4px solid red;
+    -webkit-box-shadow: -1px 1px 15px black;
+            box-shadow: -1px 1px 15px black;
+    padding: 20px 10px;
+  }
+  .projectParent li:nth-child(3) {
+    -webkit-box-ordinal-group: -4;
+        -ms-flex-order: -5;
+            order: -5;
+  }
+  .projectParent li:nth-child(4) {
+    -webkit-box-ordinal-group: -5;
+        -ms-flex-order: -6;
+            order: -6;
+  }
+  .projectParent li:nth-child(5) {
+    -webkit-box-ordinal-group: -3;
+        -ms-flex-order: -4;
+            order: -4;
+  }
+  .projectParent li:nth-child(6) {
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+  }
+  .projectParent li:nth-child(7) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .projectParent li:nth-child(8) {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  .projectParent .overlay {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 715px) {
+  .navigation .slideOut {
+    width: 85vw;
+  }
+  .techSkillsContainer .techSkillsChild {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .slideOut {
+    width: 84vw;
+  }
+  .aboutFlexParent .imageParent img:hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .techSkillsContainer .techSkillsChild {
+    width: 50%;
+  }
+  .projectParent .projectPic {
+    width: 80%;
+  }
+  .projectParent .projectLinks a {
+    padding: 5px 1px;
+    font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .navigation .slideOut {
+    width: 80vw;
+  }
+  .techSkillsContainer .techSkillsChild i {
+    font-size: 2.2rem;
+  }
+}
 input[type=checkbox] {
   opacity: 0;
 }
 input[type=checkbox]:focus + label {
-  border: 1px dotted #202020;
-  color: blue;
+  color: rgb(235, 0, 0);
+  opacity: 0.7;
 }
 
 nav input {
@@ -384,10 +522,11 @@ nav label[for=toggle] {
 }
 nav .slideOut {
   position: fixed;
-  width: 100vw;
+  width: 90vw;
   left: -130%;
   background-color: #202020;
   opacity: 0.95;
+  border-right: 3px ridge rgb(235, 0, 0);
   height: 100vh;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -395,7 +534,7 @@ nav .slideOut {
 }
 nav .slideOut li {
   width: 100%;
-  margin: 20px;
+  margin: 20px 0;
 }
 nav .slideOut a {
   display: inline-block;
@@ -433,31 +572,8 @@ nav .slideOut a {
   color: rgb(235, 0, 0);
 }
 
-.firstBackground {
-  background-color: #202020;
-}
-
 .main {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.main a {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.scrollDirection i {
-  font-size: 3rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-bottom: 15px;
-  color: rgb(235, 0, 0);
-}
-
-.mainHeading {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,9 +581,31 @@ nav .slideOut a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 15px;
+  color: rgb(235, 0, 0);
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.mainHeading {
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .beforeTitle {
@@ -489,7 +627,7 @@ nav .slideOut a {
 
 .headerPortfolio {
   font-family: "Londrina Outline", cursive;
-  font-size: 14rem;
+  font-size: 4rem;
   text-transform: uppercase;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
@@ -536,6 +674,8 @@ h4 {
   border: 10px solid white;
   border-bottom: 50px solid white;
   border-radius: 2px;
+  -webkit-box-shadow: -10px 10px 15px black;
+          box-shadow: -10px 10px 15px black;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
   position: absolute;
@@ -576,6 +716,10 @@ h4 {
 }
 
 .hobbies {
+  margin-bottom: 20px;
+}
+
+.hobbiesChild {
   margin-top: 10px;
   height: 15%;
   display: -webkit-box;
@@ -587,16 +731,16 @@ h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.hobbies p {
+.hobbiesChild p {
   text-align: center;
   width: 50%;
   font-size: 0.8rem;
 }
 
-.education {
+.educationChild {
   text-align: center;
 }
-.education p {
+.educationChild p {
   font-size: 0.8rem;
 }
 
@@ -612,8 +756,14 @@ h4 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 20px;
+  margin-bottom: 50px;
   -webkit-box-shadow: -10px 10px 15px black;
           box-shadow: -10px 10px 15px black;
 }
@@ -632,16 +782,43 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   width: 20%;
-  height: 30%;
-}
-.techSkillsChild img {
-  height: 45%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 .techSkillsChild p {
   margin-top: 10px;
   font-size: 0.9rem;
+  text-align: center;
+  display: none;
+}
+.techSkillsChild i {
+  font-size: 3rem;
+}
+
+.techSkillsChild:hover p {
+  display: inline-block;
+}
+
+.terminal {
+  color: rgb(1, 140, 1);
+}
+
+.gear {
+  color: rgb(138, 61, 138);
+}
+
+.mobile {
+  color: lightblue;
+}
+
+.access {
+  color: rgb(104, 104, 207);
+}
+
+.pair {
+  color: silver;
 }
 
 .projectParent {
@@ -663,6 +840,31 @@ h4 {
   margin: 50px 10px;
   width: calc(50% - 100px);
   height: 100%;
+}
+.projectParent img {
+  height: 100%;
+}
+.projectParent li:nth-child(2),
+.projectParent li:nth-child(3),
+.projectParent li:nth-child(6),
+.projectParent li:nth-child(7) {
+  border-bottom: 4px solid red;
+  -webkit-box-shadow: -1px 1px 15px black;
+          box-shadow: -1px 1px 15px black;
+  padding: 20px 10px;
+}
+.projectParent li:nth-child(1),
+.projectParent li:nth-child(4),
+.projectParent li:nth-child(5),
+.projectParent li:nth-child(8) {
+  -webkit-box-shadow: -1px 0px 5px red;
+          box-shadow: -1px 0px 5px red;
+}
+
+.itemGrow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .projectItem {
@@ -686,6 +888,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
+  text-align: center;
 }
 
 .projectLinks {
@@ -733,6 +936,7 @@ h4 {
 
 fieldset {
   max-width: 600px;
+  min-width: 200px;
   margin: 0 auto;
   padding: 20px;
   background-color: #1a1a1a;
@@ -780,6 +984,7 @@ fieldset label {
 }
 
 footer {
+  margin-top: 200px;
   text-align: center;
 }
 

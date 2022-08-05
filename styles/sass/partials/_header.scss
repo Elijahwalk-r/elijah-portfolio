@@ -1,28 +1,23 @@
-.firstBackground{
-    background-color: $primary;
-}
-
 .main{
     height: 100vh;
-    display: flex; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     a{
         align-self: flex-end;
+        margin-bottom: 15px;
+        color: $tertiary;
+        font-size: 3rem;
+        margin: 0 auto;
     }
-}
-
-.scrollDirection i {
-    font-size: 3rem;
-    align-self: flex-end;
-    margin-bottom: 15px;
-    color: $tertiary;
 }
 
 
 .mainHeading{
-    height: 100%;
+    height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .beforeTitle{
@@ -42,7 +37,8 @@
 
 .headerPortfolio{
     font-family: 'Londrina Outline', cursive;
-    font-size: 14rem;
+    font-size: 4rem;
+    // font-size: clamp(10rem, 30vw, 14rem);
     text-transform: uppercase;
     transform: rotate(-20deg);
     position: absolute;
