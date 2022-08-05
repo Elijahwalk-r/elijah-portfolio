@@ -34,6 +34,11 @@
 
  .itemGrow {
      flex: 1 1 auto;
+     p{
+        a:hover,:focus{
+            border-bottom: 2px solid white;
+        }
+     }
  }
 
 .projectItem{

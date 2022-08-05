@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    // add font family
+    font-family: $bodyFont;
     font-size: 1rem;
 }
 
@@ -11,7 +11,7 @@ h1,
 h2,
 h3,
 h4{
-    // add font family
+    font-family: $headingFonts;
     margin: 0;
     color: $tertiary;
 }

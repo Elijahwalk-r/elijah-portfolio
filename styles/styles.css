@@ -240,6 +240,7 @@ html {
 }
 
 body {
+  font-family: "Chivo", sans-serif;
   font-size: 1rem;
 }
 
@@ -247,6 +248,7 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: "Asul", sans-serif;
   margin: 0;
   color: rgb(235, 0, 0);
 }
@@ -716,7 +718,7 @@ h4 {
 }
 
 .hobbies {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .hobbiesChild {
@@ -866,6 +868,9 @@ h4 {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+.itemGrow p a:hover, .itemGrow p :focus {
+  border-bottom: 2px solid white;
+}
 
 .projectItem {
   position: relative;
@@ -986,6 +991,7 @@ fieldset label {
 footer {
   margin-top: 200px;
   text-align: center;
+  font-size: 0.95rem;
 }
 
 @-webkit-keyframes scrollArrow {
@@ -993,13 +999,13 @@ footer {
     margin-bottom: 10px;
   }
   20%, 40%, 60%, 80% {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   10%, 30%, 50%, 70%, 90% {
     margin-bottom: 10px;
   }
   100% {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1008,13 +1014,13 @@ footer {
     margin-bottom: 10px;
   }
   20%, 40%, 60%, 80% {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   10%, 30%, 50%, 70%, 90% {
     margin-bottom: 10px;
   }
   100% {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 .scrollDirection i {
