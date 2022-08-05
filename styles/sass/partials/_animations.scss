@@ -1,3 +1,11 @@
+// NAV Animations 
+.navigation .navBar{
+    .menu:hover{
+        color: $tertiary;
+    }
+}
+
+
 // HEADER PAGE ANIMATION
 @keyframes scrollArrow {
     0% {
@@ -29,3 +37,36 @@
     }
 }
 
+.headerName{
+    transition: 1s;
+}
+.headerName:hover{
+    background-color: white;
+    color: $tertiary;
+}
+
+// Projects Page
+.projectLinks{
+    a:hover,:focus{
+        color: $accent;
+        background-color: $primary;
+        transform: scale(1.1);
+    }
+}
+
+// Contact Page
+.contactSubmit{
+    transition: all 0.3s;
+}
+ 
+.contactSubmit:hover{
+    transform: scale(1.2);
+    color: $accent;
+    background-color: black;
+}
+
+.contactSubmit:active,
+:focus {
+    border: 3px solid $tertiary;
+    box-shadow: 0 0 5px rgb(71, 71, 71);
+}

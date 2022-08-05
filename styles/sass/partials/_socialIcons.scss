@@ -12,11 +12,13 @@
 
     a:hover::before,
     a:focus::before {
-        content: url("../assets/pointer.png");
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: '\f105';
         position: absolute;
-        transform: rotate(90deg);
-        top: 15px;
+        top: 20px;
         right: 50px;
+        color: red;
     }
 
     i{

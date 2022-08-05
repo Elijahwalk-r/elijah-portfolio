@@ -19,7 +19,7 @@
     li:nth-child(3),
     li:nth-child(6),
     li:nth-child(7) {
-        border-bottom: 4px solid red;
+        border-bottom: 4px solid $accent;
         box-shadow: -1px 1px 15px black;
         padding: 20px 10px;
     }
@@ -28,7 +28,7 @@
     li:nth-child(4),
     li:nth-child(5),
     li:nth-child(8) {
-        box-shadow: -1px 0px 5px red;
+        box-shadow: -1px 0px 5px $accent;
     }
 }
 

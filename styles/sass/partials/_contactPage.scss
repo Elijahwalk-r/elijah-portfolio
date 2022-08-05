@@ -33,12 +33,7 @@ fieldset{
     background: $tertiary;
     border: none;
     border-radius: 5px 5px;
-    box-shadow: 0 0 20px rgb(82, 82, 82);
-    transition: all 0.3s;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color:white;
 }
-
- .contactSubmit:active,
- :focus{
-        border: 1px solid $quaternary;
-        box-shadow: 0 0 5px rgb(71, 71, 71);
-    }

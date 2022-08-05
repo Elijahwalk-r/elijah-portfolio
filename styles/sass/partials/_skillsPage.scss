@@ -10,6 +10,11 @@
     box-shadow: -10px 10px 15px black;
 }
 
+.skillsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .techSkillsChild{
     display: flex;
     flex-direction: column;
@@ -17,7 +22,7 @@
     justify-content: center;
     margin-bottom: 60px;
     width: calc(100% / 5);
-    transition: all 2s;
+    transition:all 2s;
     p{
         margin-top: 10px; 
         font-size: 0.9rem;

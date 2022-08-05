@@ -44,16 +44,14 @@ img{
 }
 
 span {
-   color: $tertiary
+   color: $tertiary;
 }
-
-// Titles
 
 .title {
     margin: 20px 0px 50px 0;
 }
 
 .subHeading{
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid $accent;
     padding-bottom: 10px;
 }

@@ -1,3 +1,4 @@
+@import 'animate.css';
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -266,8 +267,8 @@ h4 {
 }
 
 p {
-  line-height: 32px;
-  letter-spacing: 1.3px;
+  line-height: 34px;
+  letter-spacing: 1.5px;
 }
 
 ul,
@@ -344,7 +345,7 @@ span {
 }
 
 .subHeading {
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid goldenrod;
   padding-bottom: 10px;
 }
 
@@ -352,6 +353,10 @@ span {
   .social li a:hover::before,
 .social li a:focus::before {
     content: url("");
+  }
+  .mainHeading .headerPortfolio {
+    top: 150px;
+    font-size: 7rem;
   }
   .aboutFlexParent {
     -webkit-box-orient: vertical;
@@ -452,6 +457,9 @@ span {
   .navigation .slideOut {
     width: 85vw;
   }
+  .mainHeading .headerPortfolio {
+    font-size: 5rem;
+  }
   .techSkillsContainer .techSkillsChild {
     width: 33.3333333333%;
   }
@@ -459,6 +467,15 @@ span {
 @media (max-width: 500px) {
   .navigation .slideOut {
     width: 84vw;
+  }
+  .mainHeading .beforeTitle {
+    font-size: 2rem;
+  }
+  .mainHeading h1 {
+    font-size: 2.8rem;
+  }
+  .mainHeading .headerPortfolio {
+    font-size: 3rem;
   }
   .aboutFlexParent .imageParent img:hover {
     -webkit-transform: scale(2);
@@ -481,6 +498,12 @@ span {
 @media (max-width: 340px) {
   .navigation .slideOut {
     width: 80vw;
+  }
+  .mainHeading .beforeTitle {
+    font-size: 1.8rem;
+  }
+  .mainHeading h1 {
+    font-size: 2.6rem;
   }
   .techSkillsContainer .techSkillsChild i {
     font-size: 2.2rem;
@@ -558,12 +581,13 @@ nav .slideOut a {
 }
 .social a:hover::before,
 .social a:focus::before {
-  content: url("../assets/pointer.png");
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
   position: absolute;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  top: 15px;
+  top: 20px;
   right: 50px;
+  color: red;
 }
 .social i {
   -webkit-transition: all 0.4s;
@@ -572,6 +596,10 @@ nav .slideOut a {
 .social i:active,
 .social :hover {
   color: rgb(235, 0, 0);
+}
+
+header {
+  background-image: url(../assets/toronto-cn-tower.jpg);
 }
 
 .main {
@@ -613,6 +641,11 @@ nav .slideOut a {
 .beforeTitle {
   margin-bottom: 0px;
   font-size: 2.3rem;
+  line-height: 38px;
+}
+
+.period {
+  color: white;
 }
 
 .headerName {
@@ -629,15 +662,15 @@ nav .slideOut a {
 
 .headerPortfolio {
   font-family: "Londrina Outline", cursive;
-  font-size: 4rem;
+  font-size: 10rem;
   text-transform: uppercase;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
   position: absolute;
   top: 400px;
-  left: 50px;
-  z-index: -10;
-  color: #4f4f4f;
+  left: 15px;
+  z-index: 10;
+  color: red;
   opacity: 0.2;
 }
 
@@ -648,6 +681,7 @@ h4 {
 
 .aboutName {
   color: white;
+  margin-bottom: 1px;
 }
 
 .aboutFlexParent {
@@ -673,8 +707,8 @@ h4 {
 }
 .imageParent img {
   width: 75%;
-  border: 10px solid white;
-  border-bottom: 50px solid white;
+  border: 10px solid goldenrod;
+  border-bottom: 50px solid goldenrod;
   border-radius: 2px;
   -webkit-box-shadow: -10px 10px 15px black;
           box-shadow: -10px 10px 15px black;
@@ -684,8 +718,8 @@ h4 {
 }
 .imageParent img:hover {
   z-index: 10;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 .imageParent .image1 {
   left: 90px;
@@ -770,6 +804,19 @@ h4 {
           box-shadow: -10px 10px 15px black;
 }
 
+.skillsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .techSkillsChild {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -850,7 +897,7 @@ h4 {
 .projectParent li:nth-child(3),
 .projectParent li:nth-child(6),
 .projectParent li:nth-child(7) {
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid goldenrod;
   -webkit-box-shadow: -1px 1px 15px black;
           box-shadow: -1px 1px 15px black;
   padding: 20px 10px;
@@ -859,8 +906,8 @@ h4 {
 .projectParent li:nth-child(4),
 .projectParent li:nth-child(5),
 .projectParent li:nth-child(8) {
-  -webkit-box-shadow: -1px 0px 5px red;
-          box-shadow: -1px 0px 5px red;
+  -webkit-box-shadow: -1px 0px 5px goldenrod;
+          box-shadow: -1px 0px 5px goldenrod;
 }
 
 .itemGrow {
@@ -975,23 +1022,19 @@ fieldset label {
   background: rgb(235, 0, 0);
   border: none;
   border-radius: 5px 5px;
-  -webkit-box-shadow: 0 0 20px rgb(82, 82, 82);
-          box-shadow: 0 0 20px rgb(82, 82, 82);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.contactSubmit:active,
-:focus {
-  border: 1px solid #1a1a1a;
-  -webkit-box-shadow: 0 0 5px rgb(71, 71, 71);
-          box-shadow: 0 0 5px rgb(71, 71, 71);
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: white;
 }
 
 footer {
   margin-top: 200px;
   text-align: center;
   font-size: 0.95rem;
+}
+
+.navigation .navBar .menu:hover {
+  color: rgb(235, 0, 0);
 }
 
 @-webkit-keyframes scrollArrow {
@@ -1026,4 +1069,40 @@ footer {
 .scrollDirection i {
   -webkit-animation: scrollArrow 10s ease-in-out infinite;
           animation: scrollArrow 10s ease-in-out infinite;
+}
+
+.headerName {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.headerName:hover {
+  background-color: white;
+  color: rgb(235, 0, 0);
+}
+
+.projectLinks a:hover, .projectLinks :focus {
+  color: goldenrod;
+  background-color: #202020;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contactSubmit {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contactSubmit:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: goldenrod;
+  background-color: black;
+}
+
+.contactSubmit:active,
+:focus {
+  border: 3px solid rgb(235, 0, 0);
+  -webkit-box-shadow: 0 0 5px rgb(71, 71, 71);
+          box-shadow: 0 0 5px rgb(71, 71, 71);
 }

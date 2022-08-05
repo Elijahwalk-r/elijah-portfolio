@@ -38,7 +38,9 @@
 
             <!-- Hidden hamburger menu that will turn into a slideout once width of screen changes -->
             <input type="checkbox" id="toggle" name="toggle" class="hideMe">
-            <label for="toggle" id="toggle" class="fa-solid fa-bars hideMe showMe"></label>
+            <label for="toggle" id="toggle" class="hideMe showMe"> 
+                <i class="fa-solid fa-bars" id="switchToX"></i> 
+            </label>
             <ul class="navBar slideOut">
                 <li>
                     <a href="#main" class="menu">Home</a>
@@ -67,9 +69,9 @@
         <header>
             <div class="wrapper main" id="main">
                 <div class="mainHeading">
-                    <p class="beforeTitle">Hi there, I'm a</p>
-                    <h1 class="animate__slideInLeft animate__delay-2s">Web Developer<span>.</span></h1>
-                    <p class="headerName">Elijah Walker</p>
+                    <p class="beforeTitle animate__animated animate__slideInDown animate__delay-0.5s">Hi there, I'm a</p>
+                    <h1 class="animate__animated animate__slideInLeft animate__delay-0.8s">Web Developer<span class="period">.</span></h1>
+                    <p class="headerName animate__animated animate__slideInRight animate__delay-0.5s">Elijah Walker</p>
                     <p class="headerPortfolio">Portfolio</p>
                 </div>
                 <a href="#mainContent" class="scrollDirection">
@@ -90,15 +92,15 @@
             
                     <div class="aboutFlexParent">
                         <div class="imageParent">
-                            <img src="https://picsum.photos/200" alt="A picture of Elijah Smiling" class="image1">
-                            <img src="https://picsum.photos/200" alt="" class="image2">
-                            <img src="https://picsum.photos/200" alt="" class="image3">
+                            <img src="./assets/eli-football.jpeg" alt="A picture of Elijah in a Guelph Gryphons Football Jersey yelling in excitement" class="image1">
+                            <img src="./assets/eli-views.jpeg" alt="An image of Elijah in sunglasses and a bucket hat on a hot summer day standing over a pier drinking iced coffee" class="image2">
+                            <img src="./assets/eli-headshot.jpeg" alt="An image of a headshot with Elijah smiling with a black hat and a grey turtle neck on" class="image3">
                         </div>
                         <div class="aboutParent">
                             <div class="aboutFirstChild">
                                 <h3 class="aboutName">My name is <span>Elijah Walker</span></h3>
                                 <p>I'm a Front-End Developer with 5+ years’ experience in sociology and public policy. Through Managing 40+ client
-                                caseloads and interacting with many different informational systems I was able to work under pressure
+                                caseloads and interacting with many different informational systems i've noticed the effect on UX when faced with poor UI designs that lack Accessibility for all individuals. I was able to work under pressure
                                 producing quality results, while fostering others’ alignments behind a vision. I thrive in team atmospheres and have played football
                                 competitively for over 15+ years. In 2015 we actually won the Yates Cup (Ontario University)! I carry my admiration for team environments into tech. Utilizing my soft
                                 skills and attention to detail, I have a passion for bringing ideas to life through smooth, accessible, and
@@ -136,7 +138,7 @@
         <!-- START SKILLS SECTION -->
         <section class="firstBackground">
             <div class="wrapper">
-                <div class="contentSection" id="mySkills">
+                <div class="contentSection skillsSection" id="mySkills">
                     <div class="title">
                         <h2><span class="subHeading">Ski</span>lls</h2>
                     </div>
@@ -227,7 +229,7 @@
                             </div>
                         </li>
 
-                        <li class="projectItem itemGrow ">
+                        <li class="projectItem itemGrow">
                             <p> JavaScript application that lets anime fans find unique images, GIFs and facts about their favorite anime tv show. Fetching data from two seperate API's with multiple AJAX calls, and displaying images, facts and GIFs corresponding to the users selection. Made in collaboration with <a href="https://github.com/jxu710" target="_blank" rel="noopener">Jingru Xu</a>.
                             </p>
 
@@ -280,7 +282,7 @@
                         </li>
 
                         <li class="projectItem itemGrow">
-                            <p>JQuery application that lets Disney fans find unique images about their favorite Disney films side characters. Fetching data from the disney API, and displaying images corresponding to users selection.</p>
+                            <p>JQuery application that lets Disney fans find unique images about their favorite Disney films side characters. Fetching data from the Disney API, and displaying images corresponding to users selection.</p>
 
                             <div class="projectLinks">
                                 <a href="https://disney-side-character-project.netlify.app/" target="_blank" rel="noopener">Live Site</a>
@@ -333,10 +335,10 @@
                         <fieldset>
                             <form action="" method="POST" data-netlify="true">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="John Smith">
+                                <input type="text" id="name" placeholder="John Wick">
             
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" placeholder="JSmith@gmail.com">
+                                <input type="email" id="email" placeholder="JWick@gmail.com">
             
                                 <label for="message">Message</label>
                                 <textarea name="" id="message" cols="30" rows="5" placeholder="Get in touch..."></textarea>
