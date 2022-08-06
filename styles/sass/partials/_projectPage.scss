@@ -9,10 +9,10 @@
         color: white;
         margin: 50px 10px;
         width: calc((100% / 2) - 100px);
-        height: 100%;
+        height: fit-content;
     }
     img{
-        height: 100%;
+        height: fit-content;
     }
 
     li:nth-child(2),

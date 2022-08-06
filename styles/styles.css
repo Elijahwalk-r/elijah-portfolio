@@ -917,10 +917,14 @@ h4 {
   color: white;
   margin: 50px 10px;
   width: calc(50% - 100px);
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .projectParent img {
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .projectParent li:nth-child(2),
 .projectParent li:nth-child(3),
