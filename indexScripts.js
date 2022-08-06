@@ -1,3 +1,5 @@
+console.log('Hey there! Thanks for checking out my portfolio. You know what would be even better... Hiring me :)')
+
 // PSEUDO CODE A.
     // change the hamburger menu icon to an X when user clicks to signify they need to close the X
         // grab the elements affected by the change and place into variables

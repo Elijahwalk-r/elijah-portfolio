@@ -954,8 +954,8 @@ h4 {
 
 .projectPic img {
   max-height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .overlay {
