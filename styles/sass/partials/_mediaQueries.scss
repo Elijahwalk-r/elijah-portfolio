@@ -28,19 +28,13 @@
             width: 100%;
         }        
         .imageParent{
+            flex-direction: row;
             margin: 50px 0;
             width:80%;
-            position: static;
-            img{
-                position: static;
-            }
             .image1,
             .image2,
             .image3{
-                border-bottom: 20px solid $accent;
-                left: 0;
-                top: 0;
-                right:0;
+                border-bottom: 30px solid $accent;
             }
        }
     }  
@@ -133,11 +127,11 @@
 // START 500px MEDIA QUERY
 @media(max-width:500px){
     //START NAV MEDIA QUERIES
-        .navigation {
-            .slideOut {
-                width: 84vw;
-            }
+    .navigation {
+        .slideOut {
+            width: 84vw;
         }
+    }
     //END NAV MEDIA QUERIES
 
     // START HEADER QUERIES
@@ -208,11 +202,11 @@
 // START 340px MEDIA QUERY
 @media(max-width:340px){
     //START NAV MEDIA QUERIES
-        .navigation {
-            .slideOut {
-                width: 80vw;
-            }
+    .navigation {
+        .slideOut {
+            width: 80vw;
         }
+    }
     //END NAV MEDIA QUERIES
     // START HEADER QUERIES
     .mainHeading {
@@ -224,14 +218,14 @@
         }
     }
     
-        // END HEADER QUERIES
+    // END HEADER QUERIES
     // SKILLS SECTION MEDIA QUERIES START
-        .techSkillsContainer {
-            .techSkillsChild {
-                i {
-                    font-size: 2.2rem;
-                }
+    .techSkillsContainer {
+        .techSkillsChild {
+            i {
+                font-size: 2.2rem;
             }
         }
+    }
     // END SKILLS SECTION MEDIA QUERIES
 }

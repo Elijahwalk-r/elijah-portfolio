@@ -16,36 +16,29 @@ h4{
 
 .imageParent{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 35%;
-    position: relative;
-
+    width: 40%;
+    height: auto;
     img{
-        width: 75%;
+        width: 55%;
+        height: 25%;
         border: 10px solid $accent;
         border-bottom: 50px solid $accent;
         border-radius: 2px;
         box-shadow: -10px 10px 15px black;
         transition: all 0.7s;
-        position: absolute;
+        object-fit: cover;
     }
     img:hover{
         z-index: 10;
         transform: scale(1.7);
     }
-
-    .image1{
-        left: 90px;
+    .image3{
         transform: rotate(40deg);
     }
-
-    .image2{
-        left: 50px;
-        top: 100px;
-    }
-
-    .image3{
-        right: 150px;
+    .image1{
         transform: rotate(-20deg);
     }
 }

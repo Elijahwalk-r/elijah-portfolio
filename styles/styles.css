@@ -374,20 +374,17 @@ span {
     width: 100%;
   }
   .aboutFlexParent .imageParent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 50px 0;
     width: 80%;
-    position: static;
-  }
-  .aboutFlexParent .imageParent img {
-    position: static;
   }
   .aboutFlexParent .imageParent .image1,
 .aboutFlexParent .imageParent .image2,
 .aboutFlexParent .imageParent .image3 {
-    border-bottom: 20px solid goldenrod;
-    left: 0;
-    top: 0;
-    right: 0;
+    border-bottom: 30px solid goldenrod;
   }
   .techSkillsContainer .techSkillsChild {
     width: 25%;
@@ -716,14 +713,22 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 35%;
-  position: relative;
+  width: 40%;
+  height: auto;
 }
 .imageParent img {
-  width: 75%;
+  width: 55%;
+  height: 25%;
   border: 10px solid goldenrod;
   border-bottom: 50px solid goldenrod;
   border-radius: 2px;
@@ -731,24 +736,19 @@ h4 {
           box-shadow: -10px 10px 15px black;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
-  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .imageParent img:hover {
   z-index: 10;
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
 }
-.imageParent .image1 {
-  left: 90px;
+.imageParent .image3 {
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
 }
-.imageParent .image2 {
-  left: 50px;
-  top: 100px;
-}
-.imageParent .image3 {
-  right: 150px;
+.imageParent .image1 {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
@@ -940,6 +940,9 @@ h4 {
   position: relative;
 }
 
+.projectPic {
+  max-height: 500px;
+}
 .projectPic img {
   -o-object-fit: cover;
      object-fit: cover;
