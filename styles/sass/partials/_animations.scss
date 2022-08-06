@@ -53,17 +53,24 @@
     }
 }
 
-// Contact Page
-.contactSubmit{
-    transition: all 0.3s;
+// Contact Page / Resume anchor
+.contactSubmit,
+.resume{
+    transition: all 0.4s;
 }
  
+.resume:hover,
 .contactSubmit:hover{
     transform: scale(1.2);
     color: $accent;
     background-color: black;
 }
 
+.resumeAnchor:hover{
+    color: $accent;
+}
+
+.resume:active,:focus,
 .contactSubmit:active,
 :focus {
     box-shadow: 0 0 5px rgb(71, 71, 71);

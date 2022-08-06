@@ -41,20 +41,15 @@
      }
  }
 
-.projectParent{
-    
-
 .projectItem{
     position: relative;
     .projectPic{
-        max-height:250px ;
         img{
-            max-height: 500px;
             object-fit: contain;
         }
     }
 }
-}
+
 .overlay{
     background-color: black;
     position: absolute;

@@ -33,9 +33,13 @@
             width:80%;
             img{
                 border-bottom: 30px solid $accent;
+                transition: all 0.7s;
+            }
+            img:hover{
+                transform: scale(1.4);
             }
             .image1{
-              transform: rotate(-10deg);  
+                transform: rotate(-10deg);  
             }
             .image3{
                 transform: rotate(20deg);
@@ -117,6 +121,12 @@
     }    
     // END HEADER QUERIES
 
+    // START ABOUT MEDIA QUERIES
+        .resumeAnchor{
+            font-size: 0.7rem;
+        }
+    // END ABOUT MEDIA QUERIES
+
     //START SKILLS SECTION MEDIA QUERIES
     .techSkillsContainer {
         .techSkillsChild {
@@ -154,6 +164,11 @@
 
     //START ABOUT SECTION MEDIA QUERIES
     .aboutFlexParent{
+        .aboutParent{
+            .resume {
+                width: 200px;
+            }
+        }
         .imageParent{
             flex-direction: column;
             img:hover{
@@ -168,7 +183,6 @@
             align-items: center;
         }
     }
-
     // END ABOUT SECTION MEDIA QUERIES
 
     //START SKILLS SECTION MEDIA QUERIES 
@@ -213,6 +227,7 @@
         }
     }
     //END NAV MEDIA QUERIES
+    
     // START HEADER QUERIES
     .mainHeading {
         .beforeTitle {
@@ -222,8 +237,8 @@
             font-size: 2.6rem;
         }
     }
-    
     // END HEADER QUERIES
+
     // SKILLS SECTION MEDIA QUERIES START
     .techSkillsContainer {
         .techSkillsChild {

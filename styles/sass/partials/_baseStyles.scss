@@ -55,3 +55,14 @@ span {
     border-bottom: 4px solid $accent;
     padding-bottom: 10px;
 }
+.resume,
+.contactSubmit {
+    width: 30%;
+    align-self: center;
+    background: $tertiary;
+    border: none;
+    border-radius: 5px 5px;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    color: white;
+}
