@@ -22,8 +22,8 @@ const hamburgerToX = () => {
 // A6. Call my event listener 
 change();
 
-// const contactForm = document.querySelector('form');
+// const contactForm = document.querySelector('li');
 
-// contactForm.addEventListener('submit', function(e){
+// contactForm.addEventListener('click', function(e){
 //     e.preventDefault();
 // })

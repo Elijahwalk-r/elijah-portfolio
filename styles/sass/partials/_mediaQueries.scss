@@ -30,6 +30,7 @@
         .imageParent{
             margin: 50px 0;
             width:80%;
+            border: 1px solid red;
             position: static;
             img{
                 position: static;
@@ -37,7 +38,7 @@
             .image1,
             .image2,
             .image3{
-                border-bottom: 20px solid white;
+                border-bottom: 20px solid $accent;
             }
        }
     }  
@@ -159,6 +160,14 @@
             }
         }
     }
+    .hobbies{
+        .hobbiesChild{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }
+
     // END ABOUT SECTION MEDIA QUERIES
 
     //START SKILLS SECTION MEDIA QUERIES 

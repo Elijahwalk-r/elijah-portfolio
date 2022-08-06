@@ -45,7 +45,11 @@
     position: relative;
 }
 
-
+.projectPic{
+    img{
+        object-fit: cover;
+    }
+}
 .overlay{
     background-color: black;
     position: absolute;
