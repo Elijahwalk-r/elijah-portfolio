@@ -952,11 +952,13 @@ h4 {
   border-bottom: 2px solid white;
 }
 
-.projectItem {
+.projectParent .projectItem {
   position: relative;
 }
-
-.projectPic img {
+.projectParent .projectItem .projectPic {
+  max-height: 250px;
+}
+.projectParent .projectItem .projectPic img {
   max-height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
