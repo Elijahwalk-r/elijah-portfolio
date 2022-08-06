@@ -30,7 +30,6 @@
         .imageParent{
             margin: 50px 0;
             width:80%;
-            border: 1px solid red;
             position: static;
             img{
                 position: static;
@@ -39,6 +38,9 @@
             .image2,
             .image3{
                 border-bottom: 20px solid $accent;
+                left: 0;
+                top: 0;
+                right:0;
             }
        }
     }  
