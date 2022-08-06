@@ -31,10 +31,14 @@
             flex-direction: row;
             margin: 50px 0;
             width:80%;
-            .image1,
-            .image2,
-            .image3{
+            img{
                 border-bottom: 30px solid $accent;
+            }
+            .image1{
+              transform: rotate(-10deg);  
+            }
+            .image3{
+                transform: rotate(20deg);
             }
        }
     }  
@@ -151,6 +155,7 @@
     //START ABOUT SECTION MEDIA QUERIES
     .aboutFlexParent{
         .imageParent{
+            flex-direction: column;
             img:hover{
                 transform: scale(2);
             }

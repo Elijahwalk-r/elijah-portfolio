@@ -381,10 +381,16 @@ span {
     margin: 50px 0;
     width: 80%;
   }
-  .aboutFlexParent .imageParent .image1,
-.aboutFlexParent .imageParent .image2,
-.aboutFlexParent .imageParent .image3 {
+  .aboutFlexParent .imageParent img {
     border-bottom: 30px solid goldenrod;
+  }
+  .aboutFlexParent .imageParent .image1 {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  .aboutFlexParent .imageParent .image3 {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
   }
   .techSkillsContainer .techSkillsChild {
     width: 25%;
@@ -476,6 +482,12 @@ span {
   }
   .mainHeading .headerPortfolio {
     font-size: 3rem;
+  }
+  .aboutFlexParent .imageParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .aboutFlexParent .imageParent img:hover {
     -webkit-transform: scale(2);
@@ -940,10 +952,8 @@ h4 {
   position: relative;
 }
 
-.projectPic {
-  max-height: 500px;
-}
 .projectPic img {
+  max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
