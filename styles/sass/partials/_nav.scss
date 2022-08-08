@@ -1,60 +1,12 @@
-input[type=checkbox] {
-    opacity: 0;
-    &:focus+label {
-        color: $tertiary;
-        opacity: 0.7;
-    }
+.navigation{
+    position: absolute;
+    width: 100%;
 }
-
-nav {
-    input {
-        position: absolute;
-        left: 0;
+.navBar{
+    display: flex;
+    justify-content: center;
+    li{
+        margin: 10px 15px 0px 15px;
     }
-
-    .navBar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    input[type="checkbox"]:checked~.slideOut {
-        left: 0;
-        z-index: 30;
-    }
-
-    label[for="toggle"] {
-        position: fixed;
-        color: $tertiary;
-        top: 10px;
-        left: 15px;
-        z-index: 40;
-        font-size: 3rem;
-    }
-
-    .slideOut {
-        position: fixed;
-        width: 90vw;
-        left: -130%;
-        background-color: $primary;
-        opacity: 0.95;
-        border-right: 3px ridge $tertiary;
-        height: 100vh;
-        transition: 0.6s;
-        z-index: 10;
-    }
-
-    .slideOut li {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .slideOut a {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        font-size: 1.3rem;
-    }
-    
 }
 

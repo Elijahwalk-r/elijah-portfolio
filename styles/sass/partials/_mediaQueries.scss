@@ -107,8 +107,11 @@
 @media (max-width: 715px){
     //START NAV MEDIA QUERIES
     .navigation{
-        .slideOut {
-            width: 85vw;
+        text-align: center;
+        .navBar {
+            li{
+                margin: 10px 10px 0px 10px;
+            }
             }
     }
     //END NAV MEDIA QUERIES
@@ -142,8 +145,11 @@
 @media(max-width:500px){
     //START NAV MEDIA QUERIES
     .navigation {
-        .slideOut {
-            width: 84vw;
+        .navBar {
+            li {
+                margin: 10px 4px 0px 4px;
+                font-size: 0.8rem;
+            }
         }
     }
     //END NAV MEDIA QUERIES
@@ -219,15 +225,7 @@
 
 
 // START 340px MEDIA QUERY
-@media(max-width:340px){
-    //START NAV MEDIA QUERIES
-    .navigation {
-        .slideOut {
-            width: 80vw;
-        }
-    }
-    //END NAV MEDIA QUERIES
-    
+@media(max-width:340px){    
     // START HEADER QUERIES
     .mainHeading {
         .beforeTitle {
