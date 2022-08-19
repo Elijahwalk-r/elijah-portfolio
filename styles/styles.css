@@ -304,6 +304,10 @@ ul {
   left: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 75%;
@@ -362,13 +366,20 @@ span {
   color: white;
 }
 
+.scrollDirection {
+  margin-bottom: 15px;
+  color: rgb(235, 0, 0);
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
   .social li a:hover::before,
 .social li a:focus::before {
     content: url("");
   }
   .mainHeading .headerPortfolio {
-    top: 150px;
+    top: 200px;
     font-size: 7rem;
   }
   .aboutFlexParent {
@@ -392,7 +403,7 @@ span {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 50px 0;
-    width: 80%;
+    width: 70%;
   }
   .aboutFlexParent .imageParent img {
     border-bottom: 30px solid goldenrod;
@@ -628,10 +639,6 @@ header {
 .main a {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 15px;
-  color: rgb(235, 0, 0);
-  font-size: 3rem;
-  margin: 0 auto;
 }
 
 .mainHeading {
@@ -681,12 +688,16 @@ header {
   left: 15px;
   z-index: 10;
   color: red;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 h2,
 h4 {
   text-align: center;
+}
+
+.dev {
+  color: goldenrod;
 }
 
 .aboutName {
@@ -866,16 +877,15 @@ h4 {
   margin-top: 10px;
   font-size: 0.9rem;
   text-align: center;
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 .techSkillsChild i {
   font-size: 3rem;
 }
 
 .techSkillsChild:hover p {
-  opacity: 1;
+  color: goldenrod;
 }
 
 .terminal {
@@ -916,11 +926,6 @@ h4 {
   color: white;
   margin: 50px 10px;
   width: calc(50% - 100px);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.projectParent img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1051,8 +1056,32 @@ fieldset label {
   margin-bottom: 5px;
 }
 
+.scrollTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0px;
+}
+.scrollTop p {
+  font-size: 1.2rem;
+}
+
+.scrollTop:hover {
+  color: goldenrod;
+}
+
 footer {
-  margin-top: 200px;
+  margin-top: 300px;
   text-align: center;
   font-size: 0.95rem;
 }
@@ -1090,7 +1119,7 @@ footer {
     margin-bottom: 30px;
   }
 }
-.scrollDirection i {
+.scrollDirection {
   -webkit-animation: scrollArrow 10s ease-in-out infinite;
           animation: scrollArrow 10s ease-in-out infinite;
 }
@@ -1128,11 +1157,4 @@ footer {
 
 .resumeAnchor:hover {
   color: goldenrod;
-}
-
-.resume:active, :focus,
-.contactSubmit:active,
-:focus {
-  -webkit-box-shadow: 0 0 5px rgb(71, 71, 71);
-          box-shadow: 0 0 5px rgb(71, 71, 71);
 }

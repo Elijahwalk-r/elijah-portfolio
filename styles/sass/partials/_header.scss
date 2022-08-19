@@ -11,10 +11,6 @@ header{
     justify-content: space-between;
     a{
         align-self: flex-end;
-        margin-bottom: 15px;
-        color: $tertiary;
-        font-size: 3rem;
-        margin: 0 auto;
     }
 }
 
@@ -56,5 +52,5 @@ header{
     left: 15px;
     z-index: 10;
     color: red;
-    opacity: 0.2;
+    opacity: 0.1;
 }

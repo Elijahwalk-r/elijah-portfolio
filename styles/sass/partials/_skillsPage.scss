@@ -27,8 +27,7 @@
         margin-top: 10px; 
         font-size: 0.9rem;
         text-align: center;
-        opacity: 0;
-        transition: opacity 1s;
+        transition: color 1s;
     }
     i{
         font-size: 3rem;
@@ -37,7 +36,7 @@
 
 .techSkillsChild:hover{
     p{
-        opacity: 1;
+        color: $accent;
     }
 }
 

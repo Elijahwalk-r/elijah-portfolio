@@ -11,6 +11,9 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .wrapper{
     max-width: 1200px;
     width: 75%;
@@ -65,4 +68,10 @@ span {
     text-transform: uppercase;
     padding: 10px 5px;
     color: white;
+}
+.scrollDirection{
+    margin-bottom: 15px;
+    color: $tertiary;
+    font-size: 3rem;
+    margin: 0 auto;
 }

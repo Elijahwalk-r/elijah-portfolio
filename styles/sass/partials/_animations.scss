@@ -31,9 +31,7 @@
         }
 }
 .scrollDirection{
-    i{
-        animation: scrollArrow 10s ease-in-out infinite;
-    }
+    animation: scrollArrow 10s ease-in-out infinite;
 }
 
 .headerName{
@@ -68,10 +66,4 @@
 
 .resumeAnchor:hover{
     color: $accent;
-}
-
-.resume:active,:focus,
-.contactSubmit:active,
-:focus {
-    box-shadow: 0 0 5px rgb(71, 71, 71);
 }
