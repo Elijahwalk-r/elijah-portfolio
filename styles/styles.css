@@ -292,6 +292,10 @@ ul {
   font-size: 1.5rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .skip-link {
   position: absolute;
   left: -2000px;
@@ -299,13 +303,10 @@ ul {
   background-color: black;
   color: white;
   z-index: 10;
+  scroll-behavior: unset;
 }
 .skip-link:focus {
   left: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .wrapper {

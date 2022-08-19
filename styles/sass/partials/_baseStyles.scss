@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .skip-link {
     position: absolute;
     left: -2000px;
@@ -5,15 +8,13 @@
     background-color: black;
     color: white;
     z-index: 10;
+    scroll-behavior: unset;
 
     &:focus {
         left: 0;
     }
 }
 
-html{
-    scroll-behavior: smooth;
-}
 .wrapper{
     max-width: 1200px;
     width: 75%;
