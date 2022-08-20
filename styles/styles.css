@@ -356,14 +356,14 @@ span {
 
 .resume,
 .contactSubmit {
-  width: 30%;
+  width: 40%;
   -ms-flex-item-align: center;
       align-self: center;
   background: rgb(235, 0, 0);
   border: none;
   border-radius: 5px 5px;
   text-transform: uppercase;
-  padding: 10px 5px;
+  padding: 15px 5px;
   color: white;
 }
 
