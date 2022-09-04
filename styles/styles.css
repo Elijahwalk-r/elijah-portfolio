@@ -642,6 +642,16 @@ header {
       align-self: flex-end;
 }
 
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .mainHeading {
   height: 65%;
   display: -webkit-box;
@@ -660,10 +670,13 @@ header {
   margin-bottom: 0px;
   font-size: 2.3rem;
   line-height: 38px;
+  color: white;
 }
 
 .period {
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .headerName {
@@ -1073,7 +1086,7 @@ fieldset label {
           align-items: center;
   margin: 60px 0px;
 }
-.scrollTop p {
+.scrollTop h4 {
   font-size: 1.2rem;
 }
 

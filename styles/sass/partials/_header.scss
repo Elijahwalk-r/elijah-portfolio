@@ -14,6 +14,10 @@ header{
     }
 }
 
+h1{
+    display: flex;
+    flex-direction: column;
+}
 
 .mainHeading{
     height: 65%;
@@ -26,10 +30,13 @@ header{
     margin-bottom: 0px;
     font-size: 2.3rem;
     line-height: 38px;
+    color: white;
 }
 
 .period{
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 

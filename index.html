@@ -68,12 +68,17 @@
         <header>
             <div class="wrapper main" id="main">
                 <div class="mainHeading">
-                    <p class="beforeTitle animate__animated animate__slideInDown animate__delay-0.5s">Hi there, I'm a</p>
-                    <h1 class="animate__animated animate__slideInLeft animate__delay-0.8s">Web Developer<span class="period">.</span></h1>
+                    <h1>
+                        <span class="beforeTitle animate__animated animate__slideInDown animate__delay-0.5s">Hi there, I'm a</span>
+                        <span class="animate__animated animate__slideInLeft animate__delay-0.8s">Web Developer
+                            <span class="period">.</span>
+                        </span>
+                        <!-- <span class="period">.</span> -->
+                    </h1>
                     <p class="headerName animate__animated animate__slideInRight animate__delay-0.5s">Elijah Walker</p>
                     <h2 class="headerPortfolio">Portfolio</h2>
                 </div>
-                <a href="#aboutMe" class="scrollDirection">
+                <a href="#aboutMe" class="scrollDirection" aria-label="Scroll Down" >
                     <i class="fa-solid fa-angles-down"></i>
                 </a>
             </div>
@@ -120,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="resume">
-                                <a href="./assets/Elijah-Walker-Resume.pdf"  target="_blank" rel="noopener" class="resumeAnchor">Download My Resume</a>
+                                <a href="./assets/Elijah-Walker-Resume.pdf"  target="_blank" rel="noopener" class="resumeAnchor">Download My PDF Resume</a>
                             </div>
                         </div>
                     </div>
@@ -330,6 +335,7 @@
                         <p class="contactMe">Thanks for taking the time on my Portfolio, feel free to leave your contact information to know more! Reach out to me and we can have a chat about tech, sports, or why I think DC is better than Marvel.  </p>
             
                         <fieldset>
+                            <legend class="sr-only">Contact me for more Information</legend>
                             <form name="contact" method="POST" data-netlify="true">
                                 <label for="name">Name</label>
                                 <input name="text" type="text" id="name" placeholder="John Wick">
@@ -345,7 +351,7 @@
                         </fieldset>
                         <a href="#main" class="scrollDirection scrollTop">
                             <i class="fa-solid fa-angles-up"></i>
-                            <p>Click to Scroll to top</p>
+                            <h4>Click to Scroll to top of Page</h4>
                         </a>
                     </div>
                 </div>
@@ -361,22 +367,22 @@
     <aside>
         <ul class="social">
             <li>
-                <a href="https://www.linkedin.com/in/elijah-j-walker/" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/elijah-j-walker/" target="_blank" rel="noopener" aria-label="Link to my LinkedIn profile">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/Elijahwalk-r" target="_blank" rel="noopener">
+                <a href="https://github.com/Elijahwalk-r" target="_blank" rel="noopener" aria-label="Link to my Github profile">
                     <i class="fa-brands fa-square-github"></i>
                 </a>
             </li>
             <li>
-                <a href="https://twitter.com/3lijahWalker" target="_blank" rel="noopener">
+                <a href="https://twitter.com/3lijahWalker" target="_blank" rel="noopener" aria-label="Link to my Twitter profile">
                     <i class="fa-brands fa-square-twitter"></i>
                 </a>
             </li>
             <li>
-                <a href="https://calendly.com/elijah-walker" target="_blank" rel="noopener">
+                <a href="https://calendly.com/elijah-walker" target="_blank" rel="noopener" aria-label="Link to my Calendly">
                     <i class="fa-regular fa-calendar-days"></i>
                 </a>
             </li>
