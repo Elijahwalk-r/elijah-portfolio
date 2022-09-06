@@ -768,6 +768,8 @@ h4 {
 .imageParent .image3 {
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .imageParent .image1 {
   -webkit-transform: rotate(-20deg);
