@@ -451,7 +451,6 @@ span {
     -webkit-box-ordinal-group: -6;
         -ms-flex-order: -7;
             order: -7;
-    border-bottom: 4px solid red;
     -webkit-box-shadow: -1px 1px 15px black;
             box-shadow: -1px 1px 15px black;
     padding: 20px 10px;
@@ -748,7 +747,7 @@ h4 {
   height: auto;
 }
 .imageParent img {
-  width: 55%;
+  width: 48%;
   height: 25%;
   border: 10px solid goldenrod;
   border-bottom: 50px solid goldenrod;
@@ -764,6 +763,10 @@ h4 {
   z-index: 10;
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
+}
+.imageParent .image2 {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .imageParent .image3 {
   -webkit-transform: rotate(40deg);
@@ -946,19 +949,15 @@ h4 {
   height: -moz-fit-content;
   height: fit-content;
 }
-.projectParent li:nth-child(2),
-.projectParent li:nth-child(3),
-.projectParent li:nth-child(6),
-.projectParent li:nth-child(7) {
+.projectParent li:nth-child(1),
+.projectParent li:nth-child(3) {
   border-bottom: 4px solid goldenrod;
   -webkit-box-shadow: -1px 1px 15px black;
           box-shadow: -1px 1px 15px black;
   padding: 20px 10px;
 }
-.projectParent li:nth-child(1),
-.projectParent li:nth-child(4),
-.projectParent li:nth-child(5),
-.projectParent li:nth-child(8) {
+.projectParent li:nth-child(2),
+.projectParent li:nth-child(4) {
   -webkit-box-shadow: -1px 0px 5px goldenrod;
           box-shadow: -1px 0px 5px goldenrod;
 }
