@@ -1095,12 +1095,6 @@ fieldset label {
   color: goldenrod;
 }
 
-footer {
-  margin-top: 300px;
-  text-align: center;
-  font-size: 0.95rem;
-}
-
 .navigation .navBar .menu:hover {
   color: rgb(235, 0, 0);
 }
