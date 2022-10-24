@@ -2,6 +2,7 @@
 .navigation .navBar{
     .menu:hover{
         color: $tertiary;
+        border-bottom: 2px solid $tertiary;
     }
 }
 
