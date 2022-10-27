@@ -403,213 +403,25 @@ span {
   opacity: 1;
 }
 
-@media (max-width: 1200px) {
-  .social li a:hover::before,
-.social li a:focus::before {
-    content: url("");
-  }
-  .mainHeading .headerPortfolio {
-    top: 200px;
-    font-size: 7rem;
-  }
-  .aboutFlexParent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutFlexParent .aboutParent {
-    width: 100%;
-  }
-  .aboutFlexParent .imageParent {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 50px 0;
-    width: 70%;
-  }
-  .aboutFlexParent .imageParent img {
-    border-bottom: 30px solid whitesmoke;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
-  }
-  .aboutFlexParent .imageParent img:hover {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    border-bottom: 50px solid whitesmoke;
-  }
-  .aboutFlexParent .imageParent .image1 {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  .aboutFlexParent .imageParent .image3 {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  .techSkillsContainer .techSkillsChild {
-    width: 25%;
-  }
-  .projectParent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projectParent .projectItem {
-    margin: 10px 0;
-    width: 80%;
-  }
-  .projectParent .projectPic {
-    width: 50%;
-  }
-  .projectParent li:nth-child(1) {
-    -webkit-box-ordinal-group: -7;
-        -ms-flex-order: -8;
-            order: -8;
-  }
-  .projectParent li:nth-child(2) {
-    -webkit-box-ordinal-group: -6;
-        -ms-flex-order: -7;
-            order: -7;
-    -webkit-box-shadow: -1px 1px 15px black;
-            box-shadow: -1px 1px 15px black;
-    padding: 20px 10px;
-  }
-  .projectParent li:nth-child(3) {
-    -webkit-box-ordinal-group: -4;
-        -ms-flex-order: -5;
-            order: -5;
-  }
-  .projectParent li:nth-child(4) {
-    -webkit-box-ordinal-group: -5;
-        -ms-flex-order: -6;
-            order: -6;
-  }
-  .projectParent li:nth-child(5) {
-    -webkit-box-ordinal-group: -3;
-        -ms-flex-order: -4;
-            order: -4;
-  }
-  .projectParent li:nth-child(6) {
-    -webkit-box-ordinal-group: -2;
-        -ms-flex-order: -3;
-            order: -3;
-  }
-  .projectParent li:nth-child(7) {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .projectParent li:nth-child(8) {
-    -webkit-box-ordinal-group: -1;
-        -ms-flex-order: -2;
-            order: -2;
-  }
-  .projectParent .overlay {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 715px) {
-  .navigation {
-    text-align: center;
-  }
-  .navigation .navBar li {
-    margin: 10px 10px 0px 10px;
-  }
-  .mainHeading .headerPortfolio {
-    font-size: 5rem;
-  }
-  .contentSection .hobbies, .contentSection .education {
-    width: 100%;
-  }
-  .resumeAnchor {
-    font-size: 0.7rem;
-  }
-  .techSkillsContainer .techSkillsChild {
-    width: 33.3333333333%;
-  }
-  div .slideshowContainer {
-    padding: 10px 10px;
-  }
-}
-@media (max-width: 500px) {
-  .navigation .navBar li {
-    margin: 10px 4px 0px 4px;
-    font-size: 0.8rem;
-  }
-  .mainHeading .beforeTitle {
-    font-size: 2rem;
-  }
-  .mainHeading h1 {
-    font-size: 2.8rem;
-  }
-  .mainHeading .headerPortfolio {
-    font-size: 3rem;
-  }
-  .aboutFlexParent .aboutParent .resume {
-    width: 200px;
-  }
-  .aboutFlexParent .imageParent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .aboutFlexParent .imageParent img:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .hobbies .hobbiesChild {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .techSkillsContainer .techSkillsChild {
-    width: 50%;
-  }
-  .projectParent .projectPic {
-    width: 80%;
-  }
-  .projectParent .projectLinks a {
-    padding: 5px 1px;
-    font-size: 0.9rem;
-  }
-  footer p {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 340px) {
-  .mainHeading .beforeTitle {
-    font-size: 1.8rem;
-  }
-  .mainHeading h1 {
-    font-size: 2.6rem;
-  }
-  .techSkillsContainer .techSkillsChild i {
-    font-size: 2.2rem;
-  }
-}
 .navigation {
   position: absolute;
   width: 100%;
   height: 50px;
   background-color: #1a1a1a;
+}
+
+.navDiv {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navBar {
@@ -621,7 +433,25 @@ span {
           justify-content: center;
 }
 .navBar li {
-  margin: 10px 15px 0px 15px;
+  margin: 0px 15px;
+}
+
+.menu:hover {
+  border-bottom: 1px solid white;
+  color: goldenrod;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+input[type=checkbox]:focus + label {
+  border: 1px dotted #3b3939;
+  color: rgb(235, 0, 0);
+  z-index: 100;
+}
+
+.showMe {
+  visibility: hidden;
 }
 
 .social {
@@ -1118,11 +948,215 @@ fieldset label {
   color: goldenrod;
 }
 
-.navigation .navBar .menu:hover {
-  color: rgb(235, 0, 0);
-  border-bottom: 2px solid rgb(235, 0, 0);
+@media (max-width: 1200px) {
+  .social li a:hover::before,
+.social li a:focus::before {
+    content: url("");
+  }
+  .mainHeading .headerPortfolio {
+    top: 200px;
+    font-size: 7rem;
+  }
+  .aboutFlexParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutFlexParent .aboutParent {
+    width: 100%;
+  }
+  .aboutFlexParent .imageParent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 50px 0;
+    width: 70%;
+  }
+  .aboutFlexParent .imageParent img {
+    border-bottom: 30px solid whitesmoke;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .aboutFlexParent .imageParent img:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    border-bottom: 50px solid whitesmoke;
+  }
+  .aboutFlexParent .imageParent .image1 {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  .aboutFlexParent .imageParent .image3 {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  .techSkillsContainer .techSkillsChild {
+    width: 25%;
+  }
+  .projectParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectParent .projectItem {
+    margin: 10px 0;
+    width: 80%;
+  }
+  .projectParent .projectPic {
+    width: 50%;
+  }
 }
-
+@media (max-width: 715px) {
+  .navigation {
+    background-color: unset;
+  }
+  .navDiv {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  nav .showMe {
+    visibility: visible;
+  }
+  nav input {
+    position: absolute;
+    right: 0;
+  }
+  nav .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav input[type=checkbox]:checked ~ .slideOut {
+    left: 0;
+    z-index: 4;
+  }
+  nav label[for=toggle] {
+    position: fixed;
+    color: rgb(235, 0, 0);
+    top: 10px;
+    left: 15px;
+    z-index: 5;
+    font-size: 2rem;
+  }
+  nav .slideOut {
+    position: fixed;
+    width: 100vw;
+    left: -110%;
+    background-color: #3b3939;
+    opacity: 0.95;
+    height: 100vh;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav .slideOut li {
+    width: 100%;
+  }
+  nav .slideOut a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .mainHeading .headerPortfolio {
+    font-size: 5rem;
+  }
+  .contentSection .hobbies, .contentSection .education {
+    width: 100%;
+  }
+  .resumeAnchor {
+    font-size: 0.7rem;
+  }
+  .techSkillsContainer .techSkillsChild {
+    width: 33.3333333333%;
+  }
+  div .slideshowContainer {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .navBar li {
+    margin: 10px 4px 0px 4px;
+    font-size: 0.8rem;
+  }
+  .mainHeading .beforeTitle {
+    font-size: 2rem;
+  }
+  .mainHeading h1 {
+    font-size: 2.8rem;
+  }
+  .mainHeading .headerPortfolio {
+    font-size: 3rem;
+  }
+  .aboutFlexParent .aboutParent .resume {
+    width: 200px;
+  }
+  .aboutFlexParent .imageParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutFlexParent .imageParent img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .hobbies .hobbiesChild {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .techSkillsContainer .techSkillsChild {
+    width: 50%;
+  }
+  .projectParent .projectPic {
+    width: 80%;
+  }
+  .projectParent .projectLinks a {
+    padding: 5px 1px;
+    font-size: 0.9rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .mainHeading .beforeTitle {
+    font-size: 1.8rem;
+  }
+  .mainHeading h1 {
+    font-size: 2.6rem;
+  }
+  .techSkillsContainer .techSkillsChild i {
+    font-size: 2.2rem;
+  }
+}
 @-webkit-keyframes scrollArrow {
   0% {
     margin-bottom: 10px;
@@ -1137,7 +1171,6 @@ fieldset label {
     margin-bottom: 30px;
   }
 }
-
 @keyframes scrollArrow {
   0% {
     margin-bottom: 10px;

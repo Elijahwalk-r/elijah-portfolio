@@ -1,23 +1,30 @@
 console.log('Hey there! Thanks for checking out my portfolio. You know what would be even better... Hiring me :)')
 
-//  STRETCH GOALS STARTER PAGE //
-
-// 1.Create our name space Object
+// 1.Create name space Object
 const portfolioApp = {};
 
-// 2. create our init method
+// 2. create init method
 portfolioApp.init = () => {
     // 16. call our methods
     portfolioApp.eventStarter();
     portfolioApp.showSlides(portfolioApp.slideIndex);
+    portfolioApp.update();
+    portfolioApp.navigate();
 }
 
-// 4. put our slideIndex as a variable of the number 1
+// global variables
+const labelEl = document.getElementsByClassName('showMe')[0];
+const anchorEl = document.getElementsByClassName('menu')
+const checkboxEl = document.querySelector("input[type=checkbox]");
+const ulEl = document.getElementsByClassName('slideOut')[0];
+
+// START CAROUSEL JS
+// 4. put slideIndex as a variable of the number 1
 portfolioApp.slideIndex = 1;
 
 // 5. created a method that will act as the change in slides and give it a parameter.
 portfolioApp.plusSlides = function (n) {
-    //11.  we call our for loop & if conditional function 
+    //11.  call for loop & if conditional function 
     portfolioApp.showSlides(portfolioApp.slideIndex += n);
 }
 
@@ -37,10 +44,9 @@ portfolioApp.showSlides = function (n) {
     else if (n < 1) {
         portfolioApp.slideIndex = slides.length;
     }
-    // 10. show our picture giving the targeted element a display of block
+    // 10. show picture giving the targeted element a display of block
     slides[portfolioApp.slideIndex - 1].style.display = "block";
 }
-
 
 //12.  Event listener on our buttons that call the function for change in slides.
 portfolioApp.eventStarter = function () {
@@ -53,6 +59,42 @@ portfolioApp.eventStarter = function () {
         portfolioApp.plusSlides(-1);
     })
 };
+// END CAROUSEL JS
 
-// call our init method
+// START HAMBURGER MENU CHANGE JS
+
+portfolioApp.update = () => {
+    labelEl.addEventListener('click', function(e){
+    portfolioApp.toggle(labelEl)
+});
+}
+
+portfolioApp.toggle = (element) => {
+    element.classList.toggle('fa-x');
+    element.classList.toggle('fa-bars');
+}
+// END HAMBURGER MENU CHANGE JS
+
+// START NAV LINKS JS
+portfolioApp.navigate = () => {
+    for (item of anchorEl){
+        item.addEventListener('click', function(e){
+            portfolioApp.navClose(item)
+        })
+    }
+}
+
+portfolioApp.navClose = (e) => {
+   checkboxEl.checked = false
+   labelEl.classList.toggle('fa-x');
+   labelEl.classList.toggle('fa-bars');
+}
+// END NAV LINKS JS
+
+
+
+
+
+
+// call init method
 portfolioApp.init();

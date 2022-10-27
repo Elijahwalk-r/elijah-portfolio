@@ -39,8 +39,11 @@
 
     <!-- START NAV -->
     <nav class="navigation">
-        <div class="wrapper">
-            <ul class="navBar">
+        <div class="wrapper navDiv">
+            <!-- Nav to be hidden and shown on mediaQueries -->
+            <input type="checkbox" id="toggle" name="toggle" class="hideMe">
+            <label for="toggle" id="toggle" class="fa-solid fa-bars hideMe showMe"></label>
+            <ul class="navBar slideOut">
                 <li>
                     <a href="#main" class="menu">Home</a>
                 </li>

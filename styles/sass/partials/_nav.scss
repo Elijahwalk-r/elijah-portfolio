@@ -4,12 +4,40 @@
     height: 50px;
     background-color: $quaternary;
 }
+
+.navDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navBar{
     display: flex;
     justify-content: center;
 
     li{
-        margin: 10px 15px 0px 15px;
+        margin: 0px 15px;
     }
+} 
+
+.menu:hover{
+    border-bottom: 1px solid white;
+    color: $accent;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+
+    &:focus+label {
+        border: 1px dotted $primary;
+        color: $tertiary;
+        z-index: 100;
+    }
+}
+
+.showMe {
+    visibility: hidden;
 }
 

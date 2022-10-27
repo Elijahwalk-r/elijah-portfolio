@@ -68,35 +68,6 @@
         .projectPic{
             width: 50%;
         }
-        li:nth-child(1){
-            order: -8;
-        }
-        li:nth-child(2){
-            order: -7;
-            box-shadow: -1px 1px 15px black;
-            padding: 20px 10px;
-        }
-        li:nth-child(3){
-            order: -5;
-        }
-        li:nth-child(4){
-            order: -6;
-        }
-        li:nth-child(5){
-            order: -4;
-        }
-        li:nth-child(6) {
-            order: -3;
-        }
-        li:nth-child(7) {
-            order: -1;
-        }
-        li:nth-child(8) {
-            order: -2;
-        }
-        .overlay{
-            font-size: 0.9rem;
-        }
     }
     // END PROJECT SECTION MEDIA QUERIES 
 }
@@ -107,12 +78,64 @@
 @media (max-width: 715px){
     //START NAV MEDIA QUERIES
     .navigation{
-        text-align: center;
+        background-color: unset;
+    }
+
+    .navDiv {
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    nav {
+        .showMe {
+            visibility: visible;
+        }
+
+        input {
+            position: absolute;
+            right: 0;
+        }
+        
         .navBar {
-            li{
-                margin: 10px 10px 0px 10px;
-            }
-            }
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        input[type="checkbox"]:checked~.slideOut {
+            left: 0;
+            z-index: 4;
+        }
+        
+        label[for="toggle"] {
+            position: fixed;
+            color: $tertiary;
+            top: 10px;
+            left: 15px;
+            z-index: 5;
+            font-size: 2rem;
+        }
+        
+        .slideOut {
+            position: fixed;
+            width: 100vw;
+            left: -110%;
+            background-color: $primary;
+            opacity: 0.95;
+            height: 100vh;
+            transition: 0.5s;
+        }
+        
+        .slideOut li {
+            width: 100%;
+        }
+        
+        .slideOut a {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            font-size: 2rem;
+        }
     }
     //END NAV MEDIA QUERIES
 
