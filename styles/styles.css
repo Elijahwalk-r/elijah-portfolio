@@ -337,6 +337,7 @@ img {
 
 .aboutBackground {
   background-color: #1a1a1a;
+  border-bottom: 5px solid white;
 }
 
 .contactBackground {
@@ -350,6 +351,7 @@ img {
 
 .skillsBackground {
   background-color: black;
+  border-bottom: 5px solid white;
 }
 
 .sectionHeight {
@@ -489,6 +491,11 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-bottom: 5px solid black;
+}
+
+nav {
+  border-bottom: 5px solid black;
 }
 
 .main {
@@ -983,7 +990,7 @@ fieldset label {
     width: 70%;
   }
   .aboutFlexParent .imageParent img {
-    border-bottom: 30px solid whitesmoke;
+    border-bottom: 60px solid whitesmoke;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
   }
@@ -1022,6 +1029,9 @@ fieldset label {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+  }
+  nav {
+    border-bottom: none;
   }
   nav .showMe {
     visibility: visible;

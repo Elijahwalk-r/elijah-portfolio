@@ -32,7 +32,7 @@
             margin: 50px 0;
             width:70%;
             img{
-                border-bottom: 30px solid whitesmoke;
+                border-bottom: 60px solid whitesmoke;
                 transition: all 0.7s;
             }
             img:hover{
@@ -84,7 +84,13 @@
         justify-content: unset;
     }
 
+
+// nav {
+//     border-bottom: 5px solid black;
+// }
+
     nav {
+        border-bottom: none;
         .showMe {
             visibility: visible;
         }

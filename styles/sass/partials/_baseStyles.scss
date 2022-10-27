@@ -36,7 +36,9 @@ img{
 }
 .aboutBackground{
     background-color: $quaternary;
+    border-bottom: 5px solid white;
 }
+
 .contactBackground {
     background-color:black;
     color: white;
@@ -49,7 +51,10 @@ img{
 
 .skillsBackground{
     background-color: black;
+    border-bottom: 5px solid white;
 }
+
+
 
 .sectionHeight{
     height: 100vh;
