@@ -437,7 +437,7 @@ span {
 }
 
 .menu:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid goldenrod;
   color: goldenrod;
 }
 
@@ -798,12 +798,14 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .projectIcons i {
-  margin: 0px 10px 0px 10px;
+  margin: 5px 10px 0px 10px;
 }
 .projectIcons i:hover {
   color: goldenrod;
@@ -1001,20 +1003,11 @@ fieldset label {
   .techSkillsContainer .techSkillsChild {
     width: 25%;
   }
-  .projectParent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projectParent .projectItem {
+  .projectItem {
     margin: 10px 0;
     width: 80%;
   }
-  .projectParent .projectPic {
+  .projectPic {
     width: 50%;
   }
 }
@@ -1135,12 +1128,14 @@ fieldset label {
   .techSkillsContainer .techSkillsChild {
     width: 50%;
   }
-  .projectParent .projectPic {
+  .projectPic {
     width: 80%;
   }
-  .projectParent .projectLinks a {
+  .projectLinks a {
     padding: 5px 1px;
     font-size: 0.9rem;
+    margin: 0 10px;
+    text-align: center;
   }
   footer p {
     font-size: 0.8rem;
@@ -1223,4 +1218,102 @@ fieldset label {
 
 .resumeAnchor:hover {
   color: goldenrod;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  -webkit-animation: fade-bottom 1s ease-in;
+          animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  -webkit-animation: fade-left 1s ease-in;
+          animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  -webkit-animation: fade-right 1s ease-in;
+          animation: fade-right 1s ease-in;
+}
+
+@-webkit-keyframes fade-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
