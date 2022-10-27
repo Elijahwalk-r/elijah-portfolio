@@ -9,8 +9,7 @@ body{
 
 h1,
 h2,
-h3,
-h4{
+h3{
     font-family: $headingFonts;
     margin: 0;
     color: $tertiary;
@@ -26,6 +25,12 @@ h2{
 
 h4{
     font-size: 1.1rem;
+    font-family: $headingFonts;
+    margin-top: 20px;
+    font-weight: 200;
+}
+h4:hover{
+    color: $accent;
 }
 p{
     line-height: 34px;

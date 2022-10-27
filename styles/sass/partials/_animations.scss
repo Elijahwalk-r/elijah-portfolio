@@ -47,7 +47,7 @@
 .projectLinks{
     a:hover,:focus{
         color: $accent;
-        background-color: $primary;
+        border-bottom:2px solid $accent;
         transform: scale(1.1);
     }
 }

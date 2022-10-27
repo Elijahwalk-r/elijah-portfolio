@@ -26,17 +26,29 @@ a{
     color: white;
 }
 
+body{
+    background-color: black;
+}
+
 img{
     max-width: 100%;
     display: block;
 }
+.aboutBackground{
+    background-color: $quaternary;
+}
+.contactBackground {
+    background-color:black;
+    color: white;
 
-.firstBackground {
-    background-color: $primary;
 }
 
-.secondBackground {
+.projectBackground {
     background-color: $quaternary;
+}
+
+.skillsBackground{
+    background-color: black;
 }
 
 .sectionHeight{
@@ -63,7 +75,7 @@ span {
 .contactSubmit {
     width: 40%;
     align-self: center;
-    background: $tertiary;
+    background: black;
     border: none;
     border-radius: 5px 5px;
     text-transform: uppercase;

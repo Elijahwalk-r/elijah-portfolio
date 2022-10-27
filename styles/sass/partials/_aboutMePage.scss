@@ -6,30 +6,23 @@ h4{
 .dev{
     color: $accent;
 }
-.aboutName{
-    color:white;
-    margin-bottom: 1px;
-}
 
 .aboutFlexParent{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
     margin-bottom: 50px;
 }
 
 .imageParent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: auto;
+    width: 30%;
+    height: 50%;
     img{
-        width: 48%;
-        height: 25%;
+        width: 100%;
+        height: 100%;
         border: 10px solid white;
-        border-bottom: 50px solid white;
+        border-bottom: 70px solid white;
         border-radius: 2px;
         box-shadow: -10px 10px 15px black;
         transition: all 0.7s;
@@ -37,17 +30,9 @@ h4{
     }
     img:hover{
         z-index: 10;
-        transform: scale(1.7);
+        transform: scale(1.3);
     }
 
-    .image2{
-        object-fit:fill;
-    
-    }
-    .image3{
-        transform: rotate(40deg);
-        object-fit: fill;
-    }
     .image1{
         transform: rotate(-20deg);
     }
@@ -56,7 +41,7 @@ h4{
 .aboutParent{
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 65%;
     height: 100%;
     padding: 20px;
     box-shadow: -10px 10px 15px black;
@@ -74,8 +59,14 @@ h4{
     margin-bottom: 20px;
 }
 
+.education, .hobbies{
+        box-shadow: -10px 10px 15px black;
+        padding: 10px;
+        width: 50%;
+}
 .hobbies{
-    margin-top: 20px;
+    margin: 40px 0;
+    margin-left: auto;
 }
 
 .hobbiesChild{

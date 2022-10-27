@@ -36,7 +36,8 @@
                 transition: all 0.7s;
             }
             img:hover{
-                transform: scale(1.4);
+                transform: scale(0.9);
+                border-bottom: 50px solid whitesmoke;
             }
             .image1{
                 transform: rotate(-10deg);  
@@ -124,9 +125,15 @@
     // END HEADER QUERIES
 
     // START ABOUT MEDIA QUERIES
-        .resumeAnchor{
-            font-size: 0.7rem;
+    .contentSection{
+        .hobbies, .education{
+            width: 100%;
         }
+    }
+        
+    .resumeAnchor{
+        font-size: 0.7rem;
+    }
     // END ABOUT MEDIA QUERIES
 
     //START SKILLS SECTION MEDIA QUERIES
@@ -136,7 +143,15 @@
         }
     }
     // END SKILLS SECTION MEDIA QUERIES
+
+    // START PROJECT SECTION MEDIA QUERIES
+       div .slideshowContainer{
+           padding: 10px 10px;
+        }
+    // END PROJECT SECTION MEDIA QUERIES
 }
+
+
 // END 715px MEDIA QUERY
 
 
@@ -177,7 +192,7 @@
         .imageParent{
             flex-direction: column;
             img:hover{
-                transform: scale(2);
+                transform: scale(1);
             }
         }
     }

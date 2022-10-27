@@ -247,8 +247,7 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Asul", sans-serif;
   margin: 0;
   color: rgb(235, 0, 0);
@@ -264,6 +263,13 @@ h2 {
 
 h4 {
   font-size: 1.1rem;
+  font-family: "Asul", sans-serif;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+h4:hover {
+  color: goldenrod;
 }
 
 p {
@@ -320,17 +326,30 @@ a {
   color: white;
 }
 
+body {
+  background-color: black;
+}
+
 img {
   max-width: 100%;
   display: block;
 }
 
-.firstBackground {
-  background-color: #3b3939;
+.aboutBackground {
+  background-color: #1a1a1a;
 }
 
-.secondBackground {
+.contactBackground {
+  background-color: black;
+  color: white;
+}
+
+.projectBackground {
   background-color: #1a1a1a;
+}
+
+.skillsBackground {
+  background-color: black;
 }
 
 .sectionHeight {
@@ -359,7 +378,7 @@ span {
   width: 40%;
   -ms-flex-item-align: center;
       align-self: center;
-  background: rgb(235, 0, 0);
+  background: black;
   border: none;
   border-radius: 5px 5px;
   text-transform: uppercase;
@@ -422,8 +441,9 @@ span {
     transition: all 0.7s;
   }
   .aboutFlexParent .imageParent img:hover {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    border-bottom: 50px solid whitesmoke;
   }
   .aboutFlexParent .imageParent .image1 {
     -webkit-transform: rotate(-10deg);
@@ -509,11 +529,17 @@ span {
   .mainHeading .headerPortfolio {
     font-size: 5rem;
   }
+  .contentSection .hobbies, .contentSection .education {
+    width: 100%;
+  }
   .resumeAnchor {
     font-size: 0.7rem;
   }
   .techSkillsContainer .techSkillsChild {
     width: 33.3333333333%;
+  }
+  div .slideshowContainer {
+    padding: 10px 10px;
   }
 }
 @media (max-width: 500px) {
@@ -540,8 +566,8 @@ span {
             flex-direction: column;
   }
   .aboutFlexParent .imageParent img:hover {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .hobbies .hobbiesChild {
     -webkit-box-orient: vertical;
@@ -582,6 +608,8 @@ span {
 .navigation {
   position: absolute;
   width: 100%;
+  height: 50px;
+  background-color: #1a1a1a;
 }
 
 .navBar {
@@ -598,7 +626,7 @@ span {
 
 .social {
   position: fixed;
-  top: 20px;
+  top: 50px;
   right: 15px;
 }
 .social i {
@@ -700,20 +728,6 @@ h1 {
   padding: 5px 10px;
 }
 
-.headerPortfolio {
-  font-family: "Londrina Outline", cursive;
-  font-size: 10rem;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
-  position: absolute;
-  top: 400px;
-  left: 15px;
-  z-index: 10;
-  color: red;
-  opacity: 0.1;
-}
-
 h2,
 h4 {
   text-align: center;
@@ -723,11 +737,6 @@ h4 {
   color: goldenrod;
 }
 
-.aboutName {
-  color: white;
-  margin-bottom: 1px;
-}
-
 .aboutFlexParent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,32 +744,22 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   margin-bottom: 50px;
 }
 
 .imageParent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
-  height: auto;
+  width: 30%;
+  height: 50%;
 }
 .imageParent img {
-  width: 48%;
-  height: 25%;
+  width: 100%;
+  height: 100%;
   border: 10px solid white;
-  border-bottom: 50px solid white;
+  border-bottom: 70px solid white;
   border-radius: 2px;
   -webkit-box-shadow: -10px 10px 15px black;
           box-shadow: -10px 10px 15px black;
@@ -771,18 +770,8 @@ h4 {
 }
 .imageParent img:hover {
   z-index: 10;
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
-}
-.imageParent .image2 {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.imageParent .image3 {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-  -o-object-fit: fill;
-     object-fit: fill;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 .imageParent .image1 {
   -webkit-transform: rotate(-20deg);
@@ -797,7 +786,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55%;
+  width: 65%;
   height: 100%;
   padding: 20px;
   -webkit-box-shadow: -10px 10px 15px black;
@@ -817,8 +806,16 @@ h4 {
   margin-bottom: 20px;
 }
 
+.education, .hobbies {
+  -webkit-box-shadow: -10px 10px 15px black;
+          box-shadow: -10px 10px 15px black;
+  padding: 10px;
+  width: 50%;
+}
+
 .hobbies {
-  margin-top: 20px;
+  margin: 40px 0;
+  margin-left: auto;
 }
 
 .hobbiesChild {
@@ -866,8 +863,8 @@ h4 {
   width: fit-content;
   padding: 20px;
   margin-bottom: 50px;
-  -webkit-box-shadow: -10px 10px 15px black;
-          box-shadow: -10px 10px 15px black;
+  -webkit-box-shadow: -10px 10px 15px white;
+          box-shadow: -10px 10px 15px white;
 }
 
 .skillsSection {
@@ -937,78 +934,6 @@ h4 {
   color: silver;
 }
 
-.projectParent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  -webkit-box-shadow: -10px 10px 15px black;
-          box-shadow: -10px 10px 15px black;
-  margin-bottom: 50px;
-}
-.projectParent li {
-  color: white;
-  margin: 50px 10px;
-  width: calc(50% - 100px);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.projectParent li:nth-child(1),
-.projectParent li:nth-child(3) {
-  border-bottom: 4px solid goldenrod;
-  -webkit-box-shadow: -1px 1px 15px black;
-          box-shadow: -1px 1px 15px black;
-  padding: 20px 10px;
-}
-.projectParent li:nth-child(2),
-.projectParent li:nth-child(4) {
-  -webkit-box-shadow: -1px 0px 5px goldenrod;
-          box-shadow: -1px 0px 5px goldenrod;
-}
-
-.itemGrow {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-.itemGrow p a:hover, .itemGrow p :focus {
-  border-bottom: 2px solid white;
-}
-
-.projectItem {
-  position: relative;
-}
-.projectItem .projectPic img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.overlay {
-  background-color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  text-align: center;
-}
-
 .projectLinks {
   height: 100%;
   display: -webkit-box;
@@ -1024,10 +949,18 @@ h4 {
 }
 .projectLinks a {
   border-radius: 5%;
-  -webkit-box-shadow: -1px 1px 5px rgb(235, 0, 0);
-          box-shadow: -1px 1px 5px rgb(235, 0, 0);
-  background-color: rgb(235, 0, 0);
+  -webkit-box-shadow: -1px 1px 5px black;
+          box-shadow: -1px 1px 5px black;
+  background-color: black;
   padding: 5px 15px;
+}
+
+.projectDetails {
+  border-bottom: 1px solid goldenrod;
+  -webkit-box-shadow: -1px 1px 15px black;
+          box-shadow: -1px 1px 15px black;
+  padding: 20px 10px;
+  font-size: 0.9rem;
 }
 
 .projectIcons {
@@ -1042,14 +975,91 @@ h4 {
 .projectIcons i {
   margin: 0px 10px 0px 10px;
 }
+.projectIcons i:hover {
+  color: goldenrod;
+}
 
-.overlay:hover {
-  opacity: 0.6;
+.slideshowContainer {
+  max-width: 1050px;
+  position: relative;
+  padding: 10px 100px;
+  margin: auto;
+}
+
+.slideshowUl {
+  -webkit-box-shadow: -10px 10px 15px black;
+          box-shadow: -10px 10px 15px black;
+}
+
+img {
+  -webkit-box-shadow: -1px 0px 5px goldenrod;
+          box-shadow: -1px 0px 5px goldenrod;
+}
+
+.slideShow {
+  display: none;
+  padding: 20px 10px;
+}
+.slideShow p {
+  text-align: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  margin-top: -50px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: rgb(235, 0, 0);
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.3;
+}
+.prev i,
+.next i {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+  color: goldenrod;
+}
+
+.prev:focus,
+.next:focus {
+  opacity: 1;
+  color: goldenrod;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .contactMe {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.contactTitle {
+  color: white;
+}
+.contactTitle span {
+  color: white;
 }
 
 fieldset {
@@ -1058,8 +1068,8 @@ fieldset {
   margin: 0 auto;
   padding: 20px;
   background-color: #1a1a1a;
-  -webkit-box-shadow: -12px 12px 8px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: -12px 12px 8px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -12px 12px 8px 0 white;
+          box-shadow: -12px 12px 8px 0 white;
   border: none;
 }
 fieldset form {
@@ -1095,7 +1105,10 @@ fieldset label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 60px 0px;
+  margin: 40px 0px;
+}
+.scrollTop .scroll {
+  background-color: white;
 }
 .scrollTop h4 {
   font-size: 1.2rem;
@@ -1156,7 +1169,7 @@ fieldset label {
 
 .projectLinks a:hover, .projectLinks :focus {
   color: goldenrod;
-  background-color: #3b3939;
+  border-bottom: 2px solid goldenrod;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
